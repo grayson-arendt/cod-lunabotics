@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>College of DuPage Lunabotics: Dependencies</title>
+<title>College of DuPage Lunabotics: Overview</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="chap.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">College of DuPage Lunabotics
    &#160;<span id="projectnumber">2024</span>
@@ -61,12 +62,15 @@ $(function() {
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="PageDoc" style="float: left;"><div class="header">
   <div class="headertitle">
-<div class="title">Dependencies </div>  </div>
+<div class="title">Overview </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__home_grayson_Lunabotics_2024_README"></a> To use this project, you need to have the following packages installed:</p>
+<div class="textblock"><p><a class="anchor" id="md__home_grayson_Lunabotics_2024_README"></a> This repository contains code made by the College of DuPage team for the NASA Lunabotics competition. It is made for ROS 2 Humble on Ubuntu 22.04.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Dependencies</h1>
+<p>To use this project, you need to have the following packages installed:</p>
 <ul>
 <li><code>robot_state_publisher</code></li>
 <li><code>joint_state_publisher</code></li>
@@ -78,37 +82,37 @@ $(function() {
 <li><code>rtabmap_ros</code></li>
 </ul>
 <p>For each dependency, use <code>sudo apt install ros-humble-&lt;package_name&gt;</code>. Make sure the underscores in some of the names are replaced by dashes when using this command.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Installation</h1>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src</div>
 <div class="line">git clone -b panasonic-dev https://github.com/grayson-arendt/Lunabotics-2024.git</div>
 <div class="line">cd ..</div>
 <div class="line">colcon build</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Running Robot</h1>
 <p>If you would like to see RViz2 on your host computer without cloning this branch, use the previous instructions to clone external-dev onto your computer and panasonic-dev onto the robot's computer. Running the second command in step 3 involves no cloning on host computer, but you will have to manually select all the robot topics for visualization.</p>
 <p>Each launch file should be ran in a new terminal window.</p>
-<h3><a class="anchor" id="autotoc_md3"></a>
+<h3><a class="anchor" id="autotoc_md4"></a>
 1. Navigate to ROS 2 workspace and install:</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;</div>
 <div class="line">source install/setup.bash</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
 2. Initialize SocketCAN communication (note: the canableStart.sh script will only need to be ran once each time the robot computer boots up).</h3>
 <div class="fragment"><div class="line">chmod +x canableStart.sh # make script executable</div>
 <div class="line">./canableStart.sh</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
 3. Visualize with RViz2 (host computer):</h3>
 <div class="fragment"><div class="line">ros2 launch bringup external_launch.py</div>
 <div class="line"># or, just run RViz2 and manually add in all the topics:</div>
 <div class="line">rviz2</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
 4. Startup sensors, motors, and RTAB-Map:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup panasonic_launch.py</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 5. Startup Navigation 2 stack:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup navigation_launch.py</div>
 </div><!-- fragment --><p>In RViz2 on the host computer, you will now be able to select a "Nav2 Goal" in the GUI and have the robot navigate to that location.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Structure</h1>
 <ul>
 <li><b>external</b> (Packages from external sources)<ul>
