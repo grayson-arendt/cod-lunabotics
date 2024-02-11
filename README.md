@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Dependencies
 
 To use this project, you need to have the following packages installed:
@@ -98,3 +99,6 @@ In RViz2 on the host computer, you will now be able to select a "Nav2 Goal" in t
           - pointcloud_to_laserscan.cpp (Converts PointCloud2 into LaserScan and publishes the message)
   - **bringup** (Contains launch files for running the robot and running Navigation 2 stack)
   - **manual**  (Contains node for driving robot with a controller)
+=======
+This repository contains doxygen documentation for the Lunabotics-2024 repository.
+>>>>>>> a70a8037651b247a501c746e4dfe107b0b14d609
