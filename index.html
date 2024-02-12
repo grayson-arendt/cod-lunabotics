@@ -75,7 +75,7 @@ Dependencies</h1>
 <li><code>robot_state_publisher</code></li>
 <li><code>joint_state_publisher</code></li>
 <li><code>tf2_ros</code></li>
-<li><code>imu_complementary_filter</code></li>
+<li><code>robot_localization</code></li>
 <li><code>librealsense2</code></li>
 <li><code>realsense2_camera</code></li>
 <li><code>realsense2_camera_dbgsym</code></li>
@@ -135,7 +135,6 @@ Structure</h1>
 <li><a class="el" href="namespaceautonomous__pkg.html">autonomous_pkg</a><ul>
 <li><a class="el" href="_april_tag_8h.html">AprilTag.h</a> (Header for <a class="el" href="class_april_tag.html" title="Detects AprilTags and estimates pose.">AprilTag</a> detection)</li>
 <li><a class="el" href="_calculate_goal_8h.html">CalculateGoal.h</a> (Header for calculating goal based off <a class="el" href="class_april_tag.html" title="Detects AprilTags and estimates pose.">AprilTag</a> positions)</li>
-<li><a class="el" href="_particle_filter_8h.html">ParticleFilter.h</a> (Header for particle filter implementation)</li>
 </ul>
 </li>
 </ul>
@@ -144,10 +143,6 @@ Structure</h1>
 <li><b>src</b><ul>
 <li><b>camera</b><ul>
 <li><a class="el" href="camera__synchronization_8cpp.html">camera_synchronization.cpp</a> (Synchronizes RGB, depth, and camera info messages to have same timestamp)</li>
-</ul>
-</li>
-<li><b>filter</b><ul>
-<li><a class="el" href="particle__filter_8cpp.html">particle_filter.cpp</a> (<a class="el" href="struct_particle.html" title="Represents a particle in the particle filter with id, position, orientation, and weight.">Particle</a> filter to fuse lidar, camera, and IMU data)</li>
 </ul>
 </li>
 <li><b>motor</b><ul>
