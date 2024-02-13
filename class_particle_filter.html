@@ -91,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aa97898d1dbdfcb51d5c67ced7b84e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4aa97898d1dbdfcb51d5c67ced7b84e8">ParticleFilter</a> (int <a class="el" href="class_particle_filter.html#a4d73f797a7a4bfffbfbb4fd6d09114f9">particles</a>, std::vector&lt; double &gt; deviation)</td></tr>
 <tr class="memdesc:a4aa97898d1dbdfcb51d5c67ced7b84e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor.  <a href="class_particle_filter.html#a4aa97898d1dbdfcb51d5c67ced7b84e8">More...</a><br /></td></tr>
 <tr class="separator:a4aa97898d1dbdfcb51d5c67ced7b84e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc93b8cb11751103b8124150d2f098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#adbc93b8cb11751103b8124150d2f098c">resetTimer</a> ()</td></tr>
+<tr class="memdesc:adbc93b8cb11751103b8124150d2f098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets camera odometry timer.  <a href="class_particle_filter.html#adbc93b8cb11751103b8124150d2f098c">More...</a><br /></td></tr>
+<tr class="separator:adbc93b8cb11751103b8124150d2f098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173fc63ced10749dd5a3803609c38c2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a173fc63ced10749dd5a3803609c38c2b">lidar_odometry_callback</a> (const nav_msgs::msg::Odometry::SharedPtr odometry)</td></tr>
 <tr class="memdesc:a173fc63ced10749dd5a3803609c38c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for lidar odometry messages.  <a href="class_particle_filter.html#a173fc63ced10749dd5a3803609c38c2b">More...</a><br /></td></tr>
 <tr class="separator:a173fc63ced10749dd5a3803609c38c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +103,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a151388187ed8a04bdf21b443c01d4ba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a151388187ed8a04bdf21b443c01d4ba3">imu_callback</a> (const sensor_msgs::msg::Imu::SharedPtr imu)</td></tr>
 <tr class="memdesc:a151388187ed8a04bdf21b443c01d4ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for IMU messages.  <a href="class_particle_filter.html#a151388187ed8a04bdf21b443c01d4ba3">More...</a><br /></td></tr>
 <tr class="separator:a151388187ed8a04bdf21b443c01d4ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc93b8cb11751103b8124150d2f098c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#adbc93b8cb11751103b8124150d2f098c">resetTimer</a> ()</td></tr>
-<tr class="memdesc:adbc93b8cb11751103b8124150d2f098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets camera odometry timer.  <a href="class_particle_filter.html#adbc93b8cb11751103b8124150d2f098c">More...</a><br /></td></tr>
-<tr class="separator:adbc93b8cb11751103b8124150d2f098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02207dba676020343ca1bd586e76cfad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a02207dba676020343ca1bd586e76cfad">publish_odometry</a> ()</td></tr>
+<tr class="memdesc:a02207dba676020343ca1bd586e76cfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes odometry.  <a href="class_particle_filter.html#a02207dba676020343ca1bd586e76cfad">More...</a><br /></td></tr>
+<tr class="separator:a02207dba676020343ca1bd586e76cfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b44af1268960c325f25bcf11729dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a27b44af1268960c325f25bcf11729dd9">estimate_pose</a> ()</td></tr>
+<tr class="memdesc:a27b44af1268960c325f25bcf11729dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates pose with particle filter.  <a href="class_particle_filter.html#a27b44af1268960c325f25bcf11729dd9">More...</a><br /></td></tr>
+<tr class="separator:a27b44af1268960c325f25bcf11729dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb5df19b51a6678539871b503638485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a6eb5df19b51a6678539871b503638485">initialize</a> (double initial_x, double initial_y, double initial_theta)</td></tr>
 <tr class="memdesc:a6eb5df19b51a6678539871b503638485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the particle filter with given initial pose.  <a href="class_particle_filter.html#a6eb5df19b51a6678539871b503638485">More...</a><br /></td></tr>
 <tr class="separator:a6eb5df19b51a6678539871b503638485"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,46 +133,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a39a2de6d97b0a786a3ffc10d0eceec32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a39a2de6d97b0a786a3ffc10d0eceec32">num_particles</a></td></tr>
-<tr class="separator:a39a2de6d97b0a786a3ffc10d0eceec32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0af2a8b7dbdc2024888be30e714788"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a7f0af2a8b7dbdc2024888be30e714788">weight_sum</a> {}</td></tr>
-<tr class="separator:a7f0af2a8b7dbdc2024888be30e714788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d93791abdfbc90479a7f750e88d70e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a5d93791abdfbc90479a7f750e88d70e9">max_weight_index</a> {}</td></tr>
-<tr class="separator:a5d93791abdfbc90479a7f750e88d70e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4d8ad06a9c56c247395116d9ebc012a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ad4d8ad06a9c56c247395116d9ebc012a">max_weight</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
-<tr class="separator:ad4d8ad06a9c56c247395116d9ebc012a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ada750eb508dcf3cf7981e84b76eef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a25ada750eb508dcf3cf7981e84b76eef">log_weight</a></td></tr>
-<tr class="separator:a25ada750eb508dcf3cf7981e84b76eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3212b319b926890ec465ff1335d430bf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_particle_filter.html">ParticleFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a3212b319b926890ec465ff1335d430bf">pf</a></td></tr>
-<tr class="separator:a3212b319b926890ec465ff1335d430bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d73f797a7a4bfffbfbb4fd6d09114f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_particle.html">Particle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4d73f797a7a4bfffbfbb4fd6d09114f9">particles</a></td></tr>
-<tr class="separator:a4d73f797a7a4bfffbfbb4fd6d09114f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ccae77afb2aec60d7e2a13cfdedb33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#af0ccae77afb2aec60d7e2a13cfdedb33">std_deviation</a></td></tr>
-<tr class="separator:af0ccae77afb2aec60d7e2a13cfdedb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d2e84db870a58296ac64ef58433e2c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ab4d2e84db870a58296ac64ef58433e2c">weights</a></td></tr>
-<tr class="separator:ab4d2e84db870a58296ac64ef58433e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9b5b1854445fa6660cda1ed9c09aa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_particle_filter_8h.html#a3d96158c86d1e22df38c343efd790901">FilterState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a3d9b5b1854445fa6660cda1ed9c09aa5">state</a></td></tr>
 <tr class="separator:a3d9b5b1854445fa6660cda1ed9c09aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecc86d3cfe46625f7d85627286adddd"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a1ecc86d3cfe46625f7d85627286adddd">current_quaternion</a></td></tr>
-<tr class="separator:a1ecc86d3cfe46625f7d85627286adddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e84accbfd9c8c09f80bab1c415a04d6"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4e84accbfd9c8c09f80bab1c415a04d6">lidar_quaternion</a></td></tr>
-<tr class="separator:a4e84accbfd9c8c09f80bab1c415a04d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac796b037583bf97fe1fe2787ae553785"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ac796b037583bf97fe1fe2787ae553785">camera_quaternion</a></td></tr>
-<tr class="separator:ac796b037583bf97fe1fe2787ae553785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6dcd8ced7faf685e76f127bef4fefd"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a2c6dcd8ced7faf685e76f127bef4fefd">imu_quaternion</a></td></tr>
-<tr class="separator:a2c6dcd8ced7faf685e76f127bef4fefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71edc27d140d355a30bfa21e13c75a24"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a71edc27d140d355a30bfa21e13c75a24">lidar_euler</a></td></tr>
-<tr class="separator:a71edc27d140d355a30bfa21e13c75a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba252e372c51bf8df4c8a6e114cb582"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#acba252e372c51bf8df4c8a6e114cb582">camera_euler</a></td></tr>
-<tr class="separator:acba252e372c51bf8df4c8a6e114cb582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ff10afe0d5fe603fd28162017fbf55"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aa7ff10afe0d5fe603fd28162017fbf55">imu_euler</a></td></tr>
-<tr class="separator:aa7ff10afe0d5fe603fd28162017fbf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba9f36067e418dce1c7d4daa11767833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aba9f36067e418dce1c7d4daa11767833">odometry_lost</a></td></tr>
 <tr class="separator:aba9f36067e418dce1c7d4daa11767833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a2de6d97b0a786a3ffc10d0eceec32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a39a2de6d97b0a786a3ffc10d0eceec32">num_particles</a></td></tr>
+<tr class="separator:a39a2de6d97b0a786a3ffc10d0eceec32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d93791abdfbc90479a7f750e88d70e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a5d93791abdfbc90479a7f750e88d70e9">max_weight_index</a></td></tr>
+<tr class="separator:a5d93791abdfbc90479a7f750e88d70e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aacbbe3b81aa18969a0f346ead8d5f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a3aacbbe3b81aa18969a0f346ead8d5f9">prime_id</a></td></tr>
 <tr class="separator:a3aacbbe3b81aa18969a0f346ead8d5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2b12f677efe23841404d75c3c8d171"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#add2b12f677efe23841404d75c3c8d171">iteration</a></td></tr>
 <tr class="separator:add2b12f677efe23841404d75c3c8d171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0af2a8b7dbdc2024888be30e714788"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a7f0af2a8b7dbdc2024888be30e714788">weight_sum</a></td></tr>
+<tr class="separator:a7f0af2a8b7dbdc2024888be30e714788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ada750eb508dcf3cf7981e84b76eef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a25ada750eb508dcf3cf7981e84b76eef">log_weight</a></td></tr>
+<tr class="separator:a25ada750eb508dcf3cf7981e84b76eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d8ad06a9c56c247395116d9ebc012a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ad4d8ad06a9c56c247395116d9ebc012a">max_weight</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
+<tr class="separator:ad4d8ad06a9c56c247395116d9ebc012a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a92ebb37188ca77a01cbfd40a3adfa3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a6a92ebb37188ca77a01cbfd40a3adfa3">imu_orientation_x</a></td></tr>
 <tr class="separator:a6a92ebb37188ca77a01cbfd40a3adfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ac7c5d11ee4836dc1f6b98defbc45b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a91ac7c5d11ee4836dc1f6b98defbc45b">imu_orientation_y</a></td></tr>
@@ -223,6 +207,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a15758b11aa3e19b3b473443d81715b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c1a8fc64c971bacee5692b2f990fac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a70c1a8fc64c971bacee5692b2f990fac">camera_yaw</a></td></tr>
 <tr class="separator:a70c1a8fc64c971bacee5692b2f990fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d73f797a7a4bfffbfbb4fd6d09114f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_particle.html">Particle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4d73f797a7a4bfffbfbb4fd6d09114f9">particles</a></td></tr>
+<tr class="separator:a4d73f797a7a4bfffbfbb4fd6d09114f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0cc481de485ebf3d363cb60fc75ac3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_particle.html">Particle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4a0cc481de485ebf3d363cb60fc75ac3">updated_particles</a></td></tr>
+<tr class="separator:a4a0cc481de485ebf3d363cb60fc75ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ccae77afb2aec60d7e2a13cfdedb33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#af0ccae77afb2aec60d7e2a13cfdedb33">std_deviation</a></td></tr>
+<tr class="separator:af0ccae77afb2aec60d7e2a13cfdedb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d2e84db870a58296ac64ef58433e2c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ab4d2e84db870a58296ac64ef58433e2c">weights</a></td></tr>
+<tr class="separator:ab4d2e84db870a58296ac64ef58433e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5a316134fbed0ad75eca806fe7c11e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a0c5a316134fbed0ad75eca806fe7c11e">x_positions</a></td></tr>
 <tr class="separator:a0c5a316134fbed0ad75eca806fe7c11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16cdcc505f3405881b1a6fb6292cf82"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ae16cdcc505f3405881b1a6fb6292cf82">y_positions</a></td></tr>
@@ -231,10 +223,24 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4f19ddb7766b8e0210c9ef79a90f53db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35097e6138167fb3dad9559784a5accb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a35097e6138167fb3dad9559784a5accb">init_values</a></td></tr>
 <tr class="separator:a35097e6138167fb3dad9559784a5accb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0cc481de485ebf3d363cb60fc75ac3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_particle.html">Particle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4a0cc481de485ebf3d363cb60fc75ac3">updated_particles</a></td></tr>
-<tr class="separator:a4a0cc481de485ebf3d363cb60fc75ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc86d3cfe46625f7d85627286adddd"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a1ecc86d3cfe46625f7d85627286adddd">current_quaternion</a></td></tr>
+<tr class="separator:a1ecc86d3cfe46625f7d85627286adddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e84accbfd9c8c09f80bab1c415a04d6"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a4e84accbfd9c8c09f80bab1c415a04d6">lidar_quaternion</a></td></tr>
+<tr class="separator:a4e84accbfd9c8c09f80bab1c415a04d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac796b037583bf97fe1fe2787ae553785"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ac796b037583bf97fe1fe2787ae553785">camera_quaternion</a></td></tr>
+<tr class="separator:ac796b037583bf97fe1fe2787ae553785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6dcd8ced7faf685e76f127bef4fefd"><td class="memItemLeft" align="right" valign="top">tf2::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a2c6dcd8ced7faf685e76f127bef4fefd">imu_quaternion</a></td></tr>
+<tr class="separator:a2c6dcd8ced7faf685e76f127bef4fefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71edc27d140d355a30bfa21e13c75a24"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a71edc27d140d355a30bfa21e13c75a24">lidar_euler</a></td></tr>
+<tr class="separator:a71edc27d140d355a30bfa21e13c75a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba252e372c51bf8df4c8a6e114cb582"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#acba252e372c51bf8df4c8a6e114cb582">camera_euler</a></td></tr>
+<tr class="separator:acba252e372c51bf8df4c8a6e114cb582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ff10afe0d5fe603fd28162017fbf55"><td class="memItemLeft" align="right" valign="top">tf2::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aa7ff10afe0d5fe603fd28162017fbf55">imu_euler</a></td></tr>
+<tr class="separator:aa7ff10afe0d5fe603fd28162017fbf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec2cd197d911797eaeae42aacc3a97a"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a1ec2cd197d911797eaeae42aacc3a97a">camera_odometry_timer_</a></td></tr>
 <tr class="separator:a1ec2cd197d911797eaeae42aacc3a97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f73582ac398e8858885a42de07c5998"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a2f73582ac398e8858885a42de07c5998">odometry_publisher_timer_</a></td></tr>
+<tr class="separator:a2f73582ac398e8858885a42de07c5998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b9fe80c821f414c1dd26093bf47784"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a05b9fe80c821f414c1dd26093bf47784">lidar_odometry_subscriber_</a></td></tr>
 <tr class="separator:a05b9fe80c821f414c1dd26093bf47784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae774a1f60fdf21bbfa0f141b893472"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aeae774a1f60fdf21bbfa0f141b893472">camera_odometry_subscriber_</a></td></tr>
@@ -428,6 +434,25 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a27b44af1268960c325f25bcf11729dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b44af1268960c325f25bcf11729dd9">&#9670;&nbsp;</a></span>estimate_pose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleFilter::estimate_pose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimates pose with particle filter. </p>
 
 </div>
 </div>
@@ -626,6 +651,25 @@ Index of the prime particle. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a02207dba676020343ca1bd586e76cfad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02207dba676020343ca1bd586e76cfad">&#9670;&nbsp;</a></span>publish_odometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleFilter::publish_odometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publishes odometry. </p>
 
 </div>
 </div>
@@ -1678,7 +1722,7 @@ Index of the prime particle. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int ParticleFilter::max_weight_index {}</td>
+          <td class="memname">int ParticleFilter::max_weight_index</td>
         </tr>
       </table>
   </td>
@@ -1756,8 +1800,8 @@ Index of the prime particle. </dd></dl>
 
 </div>
 </div>
-<a id="a4d73f797a7a4bfffbfbb4fd6d09114f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d73f797a7a4bfffbfbb4fd6d09114f9">&#9670;&nbsp;</a></span>particles</h2>
+<a id="a2f73582ac398e8858885a42de07c5998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f73582ac398e8858885a42de07c5998">&#9670;&nbsp;</a></span>odometry_publisher_timer_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1766,7 +1810,7 @@ Index of the prime particle. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_particle.html">Particle</a>&gt; ParticleFilter::particles</td>
+          <td class="memname">rclcpp::TimerBase::SharedPtr ParticleFilter::odometry_publisher_timer_</td>
         </tr>
       </table>
   </td>
@@ -1778,8 +1822,8 @@ Index of the prime particle. </dd></dl>
 
 </div>
 </div>
-<a id="a3212b319b926890ec465ff1335d430bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3212b319b926890ec465ff1335d430bf">&#9670;&nbsp;</a></span>pf</h2>
+<a id="a4d73f797a7a4bfffbfbb4fd6d09114f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d73f797a7a4bfffbfbb4fd6d09114f9">&#9670;&nbsp;</a></span>particles</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1788,7 +1832,7 @@ Index of the prime particle. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_particle_filter.html">ParticleFilter</a>&gt; ParticleFilter::pf</td>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_particle.html">Particle</a>&gt; ParticleFilter::particles</td>
         </tr>
       </table>
   </td>
@@ -1898,7 +1942,7 @@ Index of the prime particle. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double ParticleFilter::weight_sum {}</td>
+          <td class="memname">double ParticleFilter::weight_sum</td>
         </tr>
       </table>
   </td>

@@ -100,6 +100,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aed2a8c162fb19c6a6f918f57cd3cc9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f6ddf75762605cf4b983dca6837d55"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_odometry_transform.html#a41f6ddf75762605cf4b983dca6837d55">odometry_subscriber_</a></td></tr>
 <tr class="separator:a41f6ddf75762605cf4b983dca6837d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c44838da1cb5b87ba45189efd64e8a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_odometry_transform.html#a6c44838da1cb5b87ba45189efd64e8a7">roll</a></td></tr>
+<tr class="separator:a6c44838da1cb5b87ba45189efd64e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc59758bdddd0104fa98363b3f41df9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_odometry_transform.html#aafc59758bdddd0104fa98363b3f41df9">pitch</a></td></tr>
+<tr class="separator:aafc59758bdddd0104fa98363b3f41df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51773a565fa99f97191d707d897496d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_odometry_transform.html#a51773a565fa99f97191d707d897496d8">yaw</a></td></tr>
+<tr class="separator:a51773a565fa99f97191d707d897496d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Broadcasts the odom-&gt;base_link transform. </p>
@@ -190,6 +196,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aafc59758bdddd0104fa98363b3f41df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc59758bdddd0104fa98363b3f41df9">&#9670;&nbsp;</a></span>pitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OdometryTransform::pitch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c44838da1cb5b87ba45189efd64e8a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c44838da1cb5b87ba45189efd64e8a7">&#9670;&nbsp;</a></span>roll</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OdometryTransform::roll</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aed2a8c162fb19c6a6f918f57cd3cc9d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed2a8c162fb19c6a6f918f57cd3cc9d8">&#9670;&nbsp;</a></span>tf_broadcaster_</h2>
 
@@ -201,6 +251,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt;tf2_ros::TransformBroadcaster&gt; OdometryTransform::tf_broadcaster_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51773a565fa99f97191d707d897496d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51773a565fa99f97191d707d897496d8">&#9670;&nbsp;</a></span>yaw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OdometryTransform::yaw</td>
         </tr>
       </table>
   </td>
