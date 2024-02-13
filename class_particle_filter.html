@@ -109,18 +109,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27b44af1268960c325f25bcf11729dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a27b44af1268960c325f25bcf11729dd9">estimate_pose</a> ()</td></tr>
 <tr class="memdesc:a27b44af1268960c325f25bcf11729dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates pose with particle filter.  <a href="class_particle_filter.html#a27b44af1268960c325f25bcf11729dd9">More...</a><br /></td></tr>
 <tr class="separator:a27b44af1268960c325f25bcf11729dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb5df19b51a6678539871b503638485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a6eb5df19b51a6678539871b503638485">initialize</a> (double initial_x, double initial_y, double initial_theta)</td></tr>
-<tr class="memdesc:a6eb5df19b51a6678539871b503638485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the particle filter with given initial pose.  <a href="class_particle_filter.html#a6eb5df19b51a6678539871b503638485">More...</a><br /></td></tr>
-<tr class="separator:a6eb5df19b51a6678539871b503638485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad364c64c64d7739e4b539d76fd00aa5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#ad364c64c64d7739e4b539d76fd00aa5b">initialize</a> (double initial_x, double initial_y, double initial_yaw)</td></tr>
+<tr class="memdesc:ad364c64c64d7739e4b539d76fd00aa5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the particle filter with given initial pose.  <a href="class_particle_filter.html#ad364c64c64d7739e4b539d76fd00aa5b">More...</a><br /></td></tr>
+<tr class="separator:ad364c64c64d7739e4b539d76fd00aa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee98786e3f018a7edfde1b61f407de34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aee98786e3f018a7edfde1b61f407de34">predict</a> (double <a class="el" href="class_particle_filter.html#af5b6b6f6366dd96fbf3b898aec72a479">lidar_position_x</a>, double <a class="el" href="class_particle_filter.html#afd404dd58261e11b58b7b9542554971c">lidar_position_y</a>, double <a class="el" href="class_particle_filter.html#ad9403bc2d2a8c1a38f176aacc3fd9c2a">lidar_yaw</a>)</td></tr>
 <tr class="memdesc:aee98786e3f018a7edfde1b61f407de34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predicts the next state of the particles based on lidar odometry.  <a href="class_particle_filter.html#aee98786e3f018a7edfde1b61f407de34">More...</a><br /></td></tr>
 <tr class="separator:aee98786e3f018a7edfde1b61f407de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f400a9086a1efc939aeb4a0b6f7cb76"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a3f400a9086a1efc939aeb4a0b6f7cb76">calculateWeight</a> (double <a class="el" href="class_particle_filter.html#af5b6b6f6366dd96fbf3b898aec72a479">lidar_position_x</a>, double <a class="el" href="class_particle_filter.html#afd404dd58261e11b58b7b9542554971c">lidar_position_y</a>, double <a class="el" href="class_particle_filter.html#ad9403bc2d2a8c1a38f176aacc3fd9c2a">lidar_yaw</a>, double <a class="el" href="class_particle_filter.html#a42acfc016fc1c59096085e5cca4fde0d">camera_position_x</a>, double <a class="el" href="class_particle_filter.html#aea9fd814571cfedaafc3fb7e52472d5a">camera_position_y</a>, double <a class="el" href="class_particle_filter.html#a70c1a8fc64c971bacee5692b2f990fac">camera_yaw</a>, double <a class="el" href="class_particle_filter.html#a98d5a88ba0d209d6442804b9f073c44e">imu_yaw</a>)</td></tr>
 <tr class="memdesc:a3f400a9086a1efc939aeb4a0b6f7cb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the weight of particles based on lidar and camera data.  <a href="class_particle_filter.html#a3f400a9086a1efc939aeb4a0b6f7cb76">More...</a><br /></td></tr>
 <tr class="separator:a3f400a9086a1efc939aeb4a0b6f7cb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b67bc02d21262cfdb01e945082f8767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a9b67bc02d21262cfdb01e945082f8767">updateWeight</a> (double <a class="el" href="class_particle_filter.html#a42acfc016fc1c59096085e5cca4fde0d">camera_position_x</a>, double camera_position__y, double camera_position_yaw, double <a class="el" href="class_particle_filter.html#a98d5a88ba0d209d6442804b9f073c44e">imu_yaw</a>)</td></tr>
-<tr class="memdesc:a9b67bc02d21262cfdb01e945082f8767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the weights of particles based on camera data.  <a href="class_particle_filter.html#a9b67bc02d21262cfdb01e945082f8767">More...</a><br /></td></tr>
-<tr class="separator:a9b67bc02d21262cfdb01e945082f8767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5405ddc3dc8c3065510235bde6eb17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#aee5405ddc3dc8c3065510235bde6eb17">updateWeight</a> (double <a class="el" href="class_particle_filter.html#a42acfc016fc1c59096085e5cca4fde0d">camera_position_x</a>, double <a class="el" href="class_particle_filter.html#aea9fd814571cfedaafc3fb7e52472d5a">camera_position_y</a>, double camera_position_yaw, double <a class="el" href="class_particle_filter.html#a98d5a88ba0d209d6442804b9f073c44e">imu_yaw</a>)</td></tr>
+<tr class="memdesc:aee5405ddc3dc8c3065510235bde6eb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the weights of particles based on camera data.  <a href="class_particle_filter.html#aee5405ddc3dc8c3065510235bde6eb17">More...</a><br /></td></tr>
+<tr class="separator:aee5405ddc3dc8c3065510235bde6eb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84265f4c32f6d157da1d40677c6c47cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_filter.html#a84265f4c32f6d157da1d40677c6c47cf">resample</a> ()</td></tr>
 <tr class="memdesc:a84265f4c32f6d157da1d40677c6c47cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resamples particles based on their weights.  <a href="class_particle_filter.html#a84265f4c32f6d157da1d40677c6c47cf">More...</a><br /></td></tr>
 <tr class="separator:a84265f4c32f6d157da1d40677c6c47cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +313,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">particles</td><td>Number of particles. </td></tr>
-    <tr><td class="paramname">deviation</td><td>Vector containing standard deviations for x, y, and theta. </td></tr>
+    <tr><td class="paramname">deviation</td><td>Vector containing standard deviations for x, y, and yaw. </td></tr>
   </table>
   </dd>
 </dl>
@@ -379,7 +379,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the weight of particles based on lidar and camera data. </p>
-<p>Calculates the weight of a particle based on lidar and camera values.</p>
+<p>Calculates the weight of a particle based on lidar, camera, and IMU values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lidar_position_x</td><td>X position of lidar. </td></tr>
@@ -430,7 +430,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">odometry</td><td>Camera odometry message.</td></tr>
-    <tr><td class="paramname">odometry</td><td>Received Odometry message. </td></tr>
+    <tr><td class="paramname">odometry</td><td>Received odometry message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -530,8 +530,8 @@ Index of the prime particle. </dd></dl>
 
 </div>
 </div>
-<a id="a6eb5df19b51a6678539871b503638485"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eb5df19b51a6678539871b503638485">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="ad364c64c64d7739e4b539d76fd00aa5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad364c64c64d7739e4b539d76fd00aa5b">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,10 +568,7 @@ Index of the prime particle. </dd></dl>
   <table class="params">
     <tr><td class="paramname">initial_x</td><td>Initial x position. </td></tr>
     <tr><td class="paramname">initial_y</td><td>Initial y position. </td></tr>
-    <tr><td class="paramname">initial_theta</td><td>Initial orientation (yaw).</td></tr>
-    <tr><td class="paramname">initial_x</td><td>Initial x position. </td></tr>
-    <tr><td class="paramname">initial_y</td><td>Initial y position. </td></tr>
-    <tr><td class="paramname">initial_yaw</td><td>Initial theta (yaw) orientation. </td></tr>
+    <tr><td class="paramname">initial_yaw</td><td>Initial yaw orientation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -599,7 +596,7 @@ Index of the prime particle. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">odometry</td><td>Lidar odometry message.</td></tr>
-    <tr><td class="paramname">odometry</td><td>Received Odometry message. </td></tr>
+    <tr><td class="paramname">odometry</td><td>Received odometry message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -645,8 +642,8 @@ Index of the prime particle. </dd></dl>
     <tr><td class="paramname">lidar_position_x</td><td>X position of lidar. </td></tr>
     <tr><td class="paramname">lidar_position_y</td><td>Y position of lidar. </td></tr>
     <tr><td class="paramname">lidar_yaw</td><td>Yaw orientation of lidar.</td></tr>
-    <tr><td class="paramname">lidar_position_x</td><td>lidar x position. </td></tr>
-    <tr><td class="paramname">lidar_position_y</td><td>lidar y position. </td></tr>
+    <tr><td class="paramname">lidar_position_x</td><td>Lidar x position. </td></tr>
+    <tr><td class="paramname">lidar_position_y</td><td>Lidar y position. </td></tr>
     <tr><td class="paramname">lidar_yaw</td><td>Lidar yaw orientation. </td></tr>
   </table>
   </dd>
@@ -711,8 +708,8 @@ Index of the prime particle. </dd></dl>
 
 </div>
 </div>
-<a id="a9b67bc02d21262cfdb01e945082f8767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b67bc02d21262cfdb01e945082f8767">&#9670;&nbsp;</a></span>updateWeight()</h2>
+<a id="aee5405ddc3dc8c3065510235bde6eb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5405ddc3dc8c3065510235bde6eb17">&#9670;&nbsp;</a></span>updateWeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -753,12 +750,13 @@ Index of the prime particle. </dd></dl>
 <p>Updates the weights of all particles based off calculated weights.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">camera_position_x</td><td>x position of camera. </td></tr>
-    <tr><td class="paramname">camera_position__y</td><td>y position of camera. </td></tr>
+    <tr><td class="paramname">camera_position_x</td><td>X position of camera. </td></tr>
+    <tr><td class="paramname">camera_position_y</td><td>Y position of camera. </td></tr>
     <tr><td class="paramname">camera_position_yaw</td><td>Yaw orientation of camera.</td></tr>
     <tr><td class="paramname">camera_position_x</td><td>Camera x position. </td></tr>
     <tr><td class="paramname">camera_position_y</td><td>Camera y position. </td></tr>
     <tr><td class="paramname">camera_yaw</td><td>Camera yaw orientation. </td></tr>
+    <tr><td class="paramname">imu_yaw</td><td>IMU yaw orientation. </td></tr>
   </table>
   </dd>
 </dl>
