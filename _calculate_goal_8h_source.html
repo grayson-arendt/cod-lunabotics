@@ -74,60 +74,63 @@ $(function() {
 <a href="_calculate_goal_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CALCULATE_GOAL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CALCULATE_GOAL_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_calculate_goal.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_calculate_goal.html">CalculateGoal</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">   29</a></span>&#160;    std::array&lt;std::vector&lt;float&gt;, 2&gt; <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>(std::vector&lt;float&gt; code1_pos, std::vector&lt;float&gt; code2_pos, <span class="keywordtype">float</span> d1, <span class="keywordtype">float</span> d2, <span class="keywordtype">float</span> d3)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// dx_12 and dy_12 are the horizontal and vertical displacement from</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// QR code 1 to QR code 2.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">float</span> dx_12 = code2_pos[0] - code1_pos[0];</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">float</span> dy_12 = code2_pos[1] - code1_pos[1];</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// using law of cosines to calculate cos_2.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// note: I write d1^2 - d2^2 as (d1 + d2) * (d1 - d2) to cut out</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// 1 use of multiplication</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">float</span> cos_2 = (d1 + d2) * (d1 - d2) + d3 * d3;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cos_2 /= (2 * d1 * d3);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// using pythagorean trig identity to calculate sin_2</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">float</span> sin_2 = sqrt(1 - cos_2 * cos_2);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// r is a vector of length d1 pointing from QR code 1 to the robot.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// one component of r lies parallel to the vector pointing from</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// QR code 1 to QR code 2, and one lies perpendicular.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// these are the magnitudes of those components.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">float</span> r_parallel_magnitude = cos_2 * d1;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">float</span> r_perp_magnitude = sin_2 * d1;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// we convert these components into vectors using the previously</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// calculated magnitudes and the appropriate unit vectors.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">float</span> r_parallel[2] = {r_parallel_magnitude * dx_12 / d3, r_parallel_magnitude * dy_12 / d3};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">float</span> r_perp[2] = {r_perp_magnitude * dy_12 / d3, -1 * r_perp_magnitude * dx_12 / d3};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// the two possible positions of the robot</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::vector&lt;float&gt; robot_pos_1{r_parallel[0] + r_perp[0] + code1_pos[0], r_parallel[1] + r_perp[1] + code1_pos[1]};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        std::vector&lt;float&gt; robot_pos_2{r_parallel[0] - r_perp[0] + code1_pos[0], r_parallel[1] - r_perp[1] + code1_pos[1]};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// returned as an array of float vectors</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::array&lt;std::vector&lt;float&gt;, 2&gt; robot_positions = {robot_pos_1, robot_pos_2};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> robot_positions;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">   73</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">calculate_goal</a>(std::vector&lt;float&gt; <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>, std::vector&lt;float&gt; goal_position)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        std::vector&lt;float&gt; goal_vector{goal_position[0] - <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>[0], goal_position[1] - <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>[1]};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> goal_vector;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">   29</a></span>&#160;    std::array&lt;std::vector&lt;float&gt;, 2&gt; <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>(std::vector&lt;float&gt; code1_pos, std::vector&lt;float&gt; code2_pos,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                     <span class="keywordtype">float</span> d1, <span class="keywordtype">float</span> d2, <span class="keywordtype">float</span> d3)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// dx_12 and dy_12 are the horizontal and vertical displacement from</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// QR code 1 to QR code 2.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">float</span> dx_12 = code2_pos[0] - code1_pos[0];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">float</span> dy_12 = code2_pos[1] - code1_pos[1];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// using law of cosines to calculate cos_2.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// note: I write d1^2 - d2^2 as (d1 + d2) * (d1 - d2) to cut out</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// 1 use of multiplication</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">float</span> cos_2 = (d1 + d2) * (d1 - d2) + d3 * d3;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        cos_2 /= (2 * d1 * d3);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// using pythagorean trig identity to calculate sin_2</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">float</span> sin_2 = sqrt(1 - cos_2 * cos_2);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// r is a vector of length d1 pointing from QR code 1 to the robot.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// one component of r lies parallel to the vector pointing from</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// QR code 1 to QR code 2, and one lies perpendicular.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// these are the magnitudes of those components.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">float</span> r_parallel_magnitude = cos_2 * d1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">float</span> r_perp_magnitude = sin_2 * d1;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// we convert these components into vectors using the previously</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// calculated magnitudes and the appropriate unit vectors.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">float</span> r_parallel[2] = {r_parallel_magnitude * dx_12 / d3, r_parallel_magnitude * dy_12 / d3};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">float</span> r_perp[2] = {r_perp_magnitude * dy_12 / d3, -1 * r_perp_magnitude * dx_12 / d3};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// the two possible positions of the robot</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        std::vector&lt;float&gt; robot_pos_1{r_parallel[0] + r_perp[0] + code1_pos[0],</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                       r_parallel[1] + r_perp[1] + code1_pos[1]};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::vector&lt;float&gt; robot_pos_2{r_parallel[0] - r_perp[0] + code1_pos[0],</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                       r_parallel[1] - r_perp[1] + code1_pos[1]};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// returned as an array of float vectors</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::array&lt;std::vector&lt;float&gt;, 2&gt; robot_positions = {robot_pos_1, robot_pos_2};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> robot_positions;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">   76</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">calculate_goal</a>(std::vector&lt;float&gt; <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>, std::vector&lt;float&gt; goal_position)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::vector&lt;float&gt; goal_vector{goal_position[0] - <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>[0], goal_position[1] - <a class="code" href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">robot_position</a>[1]};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> goal_vector;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_calculate_goal_html"><div class="ttname"><a href="class_calculate_goal.html">CalculateGoal</a></div><div class="ttdoc">Calculates the goal position based on AprilTag distances.</div><div class="ttdef"><b>Definition:</b> CalculateGoal.h:17</div></div>
-<div class="ttc" id="aclass_calculate_goal_html_af355a4d9091852f7b2fe87dff67d9d77"><div class="ttname"><a href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">CalculateGoal::calculate_goal</a></div><div class="ttdeci">std::vector&lt; float &gt; calculate_goal(std::vector&lt; float &gt; robot_position, std::vector&lt; float &gt; goal_position)</div><div class="ttdoc">Calculate the goal vector pointing from the robot to the goal.</div><div class="ttdef"><b>Definition:</b> CalculateGoal.h:73</div></div>
+<div class="ttc" id="aclass_calculate_goal_html_af355a4d9091852f7b2fe87dff67d9d77"><div class="ttname"><a href="class_calculate_goal.html#af355a4d9091852f7b2fe87dff67d9d77">CalculateGoal::calculate_goal</a></div><div class="ttdeci">std::vector&lt; float &gt; calculate_goal(std::vector&lt; float &gt; robot_position, std::vector&lt; float &gt; goal_position)</div><div class="ttdoc">Calculate the goal vector pointing from the robot to the goal.</div><div class="ttdef"><b>Definition:</b> CalculateGoal.h:76</div></div>
 <div class="ttc" id="aclass_calculate_goal_html_af429d14f082b7c014087cdc98b6b519a"><div class="ttname"><a href="class_calculate_goal.html#af429d14f082b7c014087cdc98b6b519a">CalculateGoal::robot_position</a></div><div class="ttdeci">std::array&lt; std::vector&lt; float &gt;, 2 &gt; robot_position(std::vector&lt; float &gt; code1_pos, std::vector&lt; float &gt; code2_pos, float d1, float d2, float d3)</div><div class="ttdoc">Calculate the possible robot positions based on AprilTag distances.</div><div class="ttdef"><b>Definition:</b> CalculateGoal.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
