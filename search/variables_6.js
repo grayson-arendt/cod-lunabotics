@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nav_5fto_5fpose_5fclient_5f_428',['nav_to_pose_client_',['../class_navigator_client.html#aaae20f40adf6be2614d495045ca04505',1,'NavigatorClient']]],
-  ['num_5fparticles_429',['num_particles',['../class_particle_filter.html#a39a2de6d97b0a786a3ffc10d0eceec32',1,'ParticleFilter']]]
+  ['theta_119',['theta',['../class_differential_drive.html#a4383cfbdf3df328366568b8b7902bda9',1,'DifferentialDrive']]],
+  ['timer_5f_120',['timer_',['../class_motor_controller.html#a85acbd44a81b823d5cab90df208d70d4',1,'MotorController::timer_()'],['../class_navigator_client.html#ad06e2cdacbc132abd4e70c6943e9dc76',1,'NavigatorClient::timer_()']]],
+  ['turning_5fradius_121',['turning_radius',['../class_differential_drive.html#aeab388e83ff50dd847a32560c1528fa9',1,'DifferentialDrive']]]
 ];

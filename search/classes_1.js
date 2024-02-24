@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calculategoal_244',['CalculateGoal',['../class_calculate_goal.html',1,'']]],
-  ['camerasynchronization_245',['CameraSynchronization',['../class_camera_synchronization.html',1,'']]]
+  ['imurotatord455_62',['IMURotatorD455',['../class_i_m_u_rotator_d455.html',1,'']]],
+  ['imurotatort265_63',['IMURotatorT265',['../class_i_m_u_rotator_t265.html',1,'']]]
 ];

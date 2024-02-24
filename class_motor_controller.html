@@ -66,8 +66,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_motor_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MotorController Class Reference</div>  </div>
@@ -88,6 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c32db157ba4b6dba1f2d6bc8891f16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a1c32db157ba4b6dba1f2d6bc8891f16d">MotorController</a> ()</td></tr>
 <tr class="memdesc:a1c32db157ba4b6dba1f2d6bc8891f16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_motor_controller.html" title="Converts velocity commands into percent output for motors.">MotorController</a>.  <a href="class_motor_controller.html#a1c32db157ba4b6dba1f2d6bc8891f16d">More...</a><br /></td></tr>
 <tr class="separator:a1c32db157ba4b6dba1f2d6bc8891f16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a2bd4cb67d2c97ba9188bbb281b375a92">callbackMotors</a> (const geometry_msgs::msg::Twist::SharedPtr cmd_vel)</td></tr>
+<tr class="memdesc:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for cmd_vel topic.  <a href="class_motor_controller.html#a2bd4cb67d2c97ba9188bbb281b375a92">More...</a><br /></td></tr>
+<tr class="separator:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -95,36 +96,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9c5eea5a4c649aadefd72e66f4d1e522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed0797381e3f7e7cb2ad8b251606ecc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a9ed0797381e3f7e7cb2ad8b251606ecc">velocity_right_cmd</a></td></tr>
 <tr class="separator:a9ed0797381e3f7e7cb2ad8b251606ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab66e68f2447bfaf7648823527ef84428"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#ab66e68f2447bfaf7648823527ef84428">l_initial</a></td></tr>
-<tr class="separator:ab66e68f2447bfaf7648823527ef84428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03ef85f9c06ea5465d4d704f6d15b1a1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a03ef85f9c06ea5465d4d704f6d15b1a1">r_initial</a></td></tr>
-<tr class="separator:a03ef85f9c06ea5465d4d704f6d15b1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b45c54b5995578201a68a92cf666bfa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a5b45c54b5995578201a68a92cf666bfa">l_final</a></td></tr>
-<tr class="separator:a5b45c54b5995578201a68a92cf666bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4fca90e0a112f465673149ff7548287"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#ab4fca90e0a112f465673149ff7548287">r_final</a></td></tr>
-<tr class="separator:ab4fca90e0a112f465673149ff7548287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae401efaaddb5f5f5d5b1fb252c677452"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#ae401efaaddb5f5f5d5b1fb252c677452">iteration</a></td></tr>
-<tr class="separator:ae401efaaddb5f5f5d5b1fb252c677452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a01764dd46fef11d813c821ce080b6d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a2a01764dd46fef11d813c821ce080b6d">left_encoder_values</a></td></tr>
-<tr class="separator:a2a01764dd46fef11d813c821ce080b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20bf912af809d1dcf2b39ee7cd62d029"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a20bf912af809d1dcf2b39ee7cd62d029">right_encoder_values</a></td></tr>
-<tr class="separator:a20bf912af809d1dcf2b39ee7cd62d029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa7f274fb5a22238c401a2b5ac957137a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#aa7f274fb5a22238c401a2b5ac957137a">encoders_callback</a> ()</td></tr>
-<tr class="memdesc:aa7f274fb5a22238c401a2b5ac957137a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for the encoders timer.  <a href="class_motor_controller.html#aa7f274fb5a22238c401a2b5ac957137a">More...</a><br /></td></tr>
-<tr class="separator:aa7f274fb5a22238c401a2b5ac957137a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a2bd4cb67d2c97ba9188bbb281b375a92">callbackMotors</a> (const geometry_msgs::msg::Twist::SharedPtr cmd_vel)</td></tr>
-<tr class="memdesc:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for cmd_vel topic.  <a href="class_motor_controller.html#a2bd4cb67d2c97ba9188bbb281b375a92">More...</a><br /></td></tr>
-<tr class="separator:a2bd4cb67d2c97ba9188bbb281b375a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a517764fa104577c5bd10ba99ab551db5"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a517764fa104577c5bd10ba99ab551db5">motor_controller_subscriber</a></td></tr>
-<tr class="separator:a517764fa104577c5bd10ba99ab551db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa274267ab6b1292fd6dbcb000e7252"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; autonomous_msgs::msg::Encoder &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a6aa274267ab6b1292fd6dbcb000e7252">encoder_publisher_</a></td></tr>
-<tr class="separator:a6aa274267ab6b1292fd6dbcb000e7252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c852da3237ad5f5a9f9c4d4cf9a8f5f"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a1c852da3237ad5f5a9f9c4d4cf9a8f5f">cmd_vel_subscriber</a></td></tr>
+<tr class="separator:a1c852da3237ad5f5a9f9c4d4cf9a8f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85acbd44a81b823d5cab90df208d70d4"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_controller.html#a85acbd44a81b823d5cab90df208d70d4">timer_</a></td></tr>
 <tr class="separator:a85acbd44a81b823d5cab90df208d70d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -182,7 +155,7 @@ Grayson Arendt </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -197,170 +170,15 @@ Grayson Arendt </dd></dl>
 
 </div>
 </div>
-<a id="aa7f274fb5a22238c401a2b5ac957137a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f274fb5a22238c401a2b5ac957137a">&#9670;&nbsp;</a></span>encoders_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MotorController::encoders_callback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Callback function for the encoders timer. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6aa274267ab6b1292fd6dbcb000e7252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aa274267ab6b1292fd6dbcb000e7252">&#9670;&nbsp;</a></span>encoder_publisher_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rclcpp::Publisher&lt;autonomous_msgs::msg::Encoder&gt;::SharedPtr MotorController::encoder_publisher_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae401efaaddb5f5f5d5b1fb252c677452"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae401efaaddb5f5f5d5b1fb252c677452">&#9670;&nbsp;</a></span>iteration</h2>
+<a id="a1c852da3237ad5f5a9f9c4d4cf9a8f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c852da3237ad5f5a9f9c4d4cf9a8f5f">&#9670;&nbsp;</a></span>cmd_vel_subscriber</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int MotorController::iteration</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5b45c54b5995578201a68a92cf666bfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b45c54b5995578201a68a92cf666bfa">&#9670;&nbsp;</a></span>l_final</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double MotorController::l_final</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab66e68f2447bfaf7648823527ef84428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab66e68f2447bfaf7648823527ef84428">&#9670;&nbsp;</a></span>l_initial</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double MotorController::l_initial</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a01764dd46fef11d813c821ce080b6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a01764dd46fef11d813c821ce080b6d">&#9670;&nbsp;</a></span>left_encoder_values</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;double&gt; MotorController::left_encoder_values</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a517764fa104577c5bd10ba99ab551db5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a517764fa104577c5bd10ba99ab551db5">&#9670;&nbsp;</a></span>motor_controller_subscriber</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr MotorController::motor_controller_subscriber</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4fca90e0a112f465673149ff7548287"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4fca90e0a112f465673149ff7548287">&#9670;&nbsp;</a></span>r_final</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double MotorController::r_final</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a03ef85f9c06ea5465d4d704f6d15b1a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03ef85f9c06ea5465d4d704f6d15b1a1">&#9670;&nbsp;</a></span>r_initial</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double MotorController::r_initial</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20bf912af809d1dcf2b39ee7cd62d029"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20bf912af809d1dcf2b39ee7cd62d029">&#9670;&nbsp;</a></span>right_encoder_values</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;double&gt; MotorController::right_encoder_values</td>
+          <td class="memname">rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr MotorController::cmd_vel_subscriber</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -372,19 +190,11 @@ Grayson Arendt </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">rclcpp::TimerBase::SharedPtr MotorController::timer_</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -418,7 +228,7 @@ Grayson Arendt </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/autonomous_pkg/src/motor/<a class="el" href="motor__controller_8cpp.html">motor_controller.cpp</a></li>
+<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/src/motor/<a class="el" href="motor__controller_8cpp.html">motor_controller.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->

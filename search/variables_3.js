@@ -1,24 +1,5 @@
 var searchData=
 [
-  ['id_381',['id',['../struct_particle.html#a544b202775517f8ba05efcb9e0a21bee',1,'Particle']]],
-  ['imu_5feuler_382',['imu_euler',['../class_particle_filter.html#aa7ff10afe0d5fe603fd28162017fbf55',1,'ParticleFilter']]],
-  ['imu_5forientation_5fw_383',['imu_orientation_w',['../class_particle_filter.html#ad1659c75e5cb405467319927d4352c79',1,'ParticleFilter']]],
-  ['imu_5forientation_5fx_384',['imu_orientation_x',['../class_particle_filter.html#a6a92ebb37188ca77a01cbfd40a3adfa3',1,'ParticleFilter']]],
-  ['imu_5forientation_5fy_385',['imu_orientation_y',['../class_particle_filter.html#a91ac7c5d11ee4836dc1f6b98defbc45b',1,'ParticleFilter']]],
-  ['imu_5forientation_5fz_386',['imu_orientation_z',['../class_particle_filter.html#a26cd2e780814cad09763892e4f956c75',1,'ParticleFilter']]],
-  ['imu_5fpitch_387',['imu_pitch',['../class_particle_filter.html#aa083a88b5b746cb1ae55f3c27c8b030b',1,'ParticleFilter']]],
-  ['imu_5fquaternion_388',['imu_quaternion',['../class_particle_filter.html#a2c6dcd8ced7faf685e76f127bef4fefd',1,'ParticleFilter']]],
-  ['imu_5froll_389',['imu_roll',['../class_particle_filter.html#aebbe469b99a1ec2bfc8b93e333f14348',1,'ParticleFilter']]],
-  ['imu_5fsubscriber_5f_390',['imu_subscriber_',['../class_particle_filter.html#abe6de07244c63faaee0f2c8d133f5978',1,'ParticleFilter::imu_subscriber_()'],['../class_wheel_i_m_u_odometry.html#a2c114a9c088f9e56316945cfff640048',1,'WheelIMUOdometry::imu_subscriber_()']]],
-  ['imu_5fw_391',['imu_w',['../class_wheel_i_m_u_odometry.html#ad7567cbc721129f34c4880ccb41612f9',1,'WheelIMUOdometry']]],
-  ['imu_5fx_392',['imu_x',['../class_wheel_i_m_u_odometry.html#adc73af3e76cf1a43f3bc217bb3e8a7fe',1,'WheelIMUOdometry']]],
-  ['imu_5fy_393',['imu_y',['../class_wheel_i_m_u_odometry.html#ab0646e29aba662828f2471145e4e12d1',1,'WheelIMUOdometry']]],
-  ['imu_5fyaw_394',['imu_yaw',['../class_particle_filter.html#a98d5a88ba0d209d6442804b9f073c44e',1,'ParticleFilter']]],
-  ['imu_5fz_395',['imu_z',['../class_wheel_i_m_u_odometry.html#a1a0ef25a7f126ceb686540846c4c5785',1,'WheelIMUOdometry']]],
-  ['info_5fsubscriber_5f_396',['info_subscriber_',['../class_camera_synchronization.html#a60f02d5cc709be4fa16cbfd729cddc6b',1,'CameraSynchronization']]],
-  ['init_5fvalues_397',['init_values',['../class_particle_filter.html#a35097e6138167fb3dad9559784a5accb',1,'ParticleFilter']]],
-  ['inputimage_398',['inputImage',['../class_april_tag.html#a19e0893f95d293794772d200742be29f',1,'AprilTag']]],
-  ['interface_399',['interface',['../motor__controller_8cpp.html#a4085c6d12a57b11755a4b6ceae4da39a',1,'interface():&#160;motor_controller.cpp'],['../motor__test_8cpp.html#a4085c6d12a57b11755a4b6ceae4da39a',1,'interface():&#160;motor_test.cpp'],['../manual__control_8cpp.html#a4085c6d12a57b11755a4b6ceae4da39a',1,'interface():&#160;manual_control.cpp']]],
-  ['isdetected_400',['isDetected',['../class_april_tag.html#a5461e79673e0bf5ffe41f8de6884fac3',1,'AprilTag']]],
-  ['iteration_401',['iteration',['../class_particle_filter.html#add2b12f677efe23841404d75c3c8d171',1,'ParticleFilter::iteration()'],['../class_motor_controller.html#ae401efaaddb5f5f5d5b1fb252c677452',1,'MotorController::iteration()']]]
+  ['percent_5foutput_115',['percent_output',['../class_differential_drive.html#ab63f1bfd3f2493bc0e6edbb8cbbba484',1,'DifferentialDrive']]],
+  ['publisher_5f_116',['publisher_',['../class_i_m_u_rotator_d455.html#ab8b41b9e5adf1472221ef5d9c7e0fedd',1,'IMURotatorD455::publisher_()'],['../class_i_m_u_rotator_t265.html#acb0656f112388bf41ef2d6fc90cea4f9',1,'IMURotatorT265::publisher_()']]]
 ];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['generate_5flaunch_5fdescription_310',['generate_launch_description',['../namespacetest__bot__description__launch.html#abc8284589fc57c6a878a271af5d25b5f',1,'test_bot_description_launch.generate_launch_description()'],['../namespaceexternal__launch.html#a5642501f1603cd73dd6d12b621a4ab90',1,'external_launch.generate_launch_description()'],['../namespacenavigation__launch.html#a2d7e9b7e7abf35961397d6711d620329',1,'navigation_launch.generate_launch_description()'],['../namespacepanasonic__launch.html#a6a34fdae4548e2fe85bd25568355b3e0',1,'panasonic_launch.generate_launch_description()']]],
-  ['getdetected_311',['getDetected',['../class_april_tag.html#afaaafae1ab241c0d2970440866a3c8ad',1,'AprilTag']]],
-  ['getparticles_312',['getParticles',['../class_particle_filter.html#a34bb71411e013d2b068c429279d72424',1,'ParticleFilter']]],
-  ['getprimeparticle_313',['getPrimeParticle',['../class_particle_filter.html#aac476b8c9ebe474d292f0e547bbb2507',1,'ParticleFilter']]],
-  ['gettheta_314',['gettheta',['../class_differential_drive.html#a4b9b44272733731ba90240a9d573b5a0',1,'DifferentialDrive']]]
+  ['left_5fwheel_5fmotor_102',['left_wheel_motor',['../motor__controller_8cpp.html#a5091ba54f3216c8e3b3d7fb54f53276a',1,'left_wheel_motor(2):&#160;motor_controller.cpp'],['../motor__test_8cpp.html#ab05ecc12358af4cbca5a1ba6f02a246a',1,'left_wheel_motor(2, interface):&#160;motor_test.cpp'],['../manual__control_8cpp.html#ab05ecc12358af4cbca5a1ba6f02a246a',1,'left_wheel_motor(2, interface):&#160;manual_control.cpp']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['detecttag_305',['detectTag',['../class_april_tag.html#aca9e1e9a150482b9fe749dd63a94715b',1,'AprilTag']]],
-  ['differentialdrive_306',['DifferentialDrive',['../class_differential_drive.html#aa0faf29e633b41ebfd9618b8cea8303e',1,'DifferentialDrive']]]
+  ['feedback_5fcallback_96',['feedback_callback',['../class_navigator_client.html#af526338e91b47a7241b74618cffa27b8',1,'NavigatorClient']]]
 ];
