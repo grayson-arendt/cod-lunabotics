@@ -89,13 +89,12 @@ Dependencies</h1>
 <li><code>rtabmap_ros</code></li>
 <li><code>rplidar_ros</code></li>
 <li><code>navigation2</code></li>
-<li><code>robot_localization</code></li>
-<li><code>robot_state_publisher</code></li>
-<li><code>joint_state_publisher</code></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Installation</h1>
-<p>Download the source code for <a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1">this</a> release. <code>Note: this repository contains realsense-ros version 4.51.1 in external directory. This is because support was dropped for the T265 camera in later releases.</code></p>
+<ol type="1">
+<li>Download the source code for <a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1">this</a> release and install. <code>Note: this repository contains realsense-ros version 4.51.1 in external directory. This is because support was dropped for the T265 camera in later releases.</code></li>
+</ol>
 <div class="fragment"><div class="line">cd Downloads/</div>
 <div class="line">tar -xzvf librealsense-2.53.1.tar.gz</div>
 <div class="line">cd librealsense-2.53.1/</div>
@@ -105,26 +104,35 @@ Installation</h1>
 <div class="line">cd ..</div>
 <div class="line">cd scripts</div>
 <div class="line">./setup_udev_rules.sh</div>
-</div><!-- fragment --><p>Next, clone and build the repository.</p>
+</div><!-- fragment --><ol type="1">
+<li>Next, clone and build the repository.</li>
+</ol>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src</div>
-<div class="line">git clone -b intel-dev https://github.com/grayson-arendt/Lunabotics-2024.git</div>
+<div class="line">git clone https://github.com/grayson-arendt/Lunabotics-2024.git</div>
 <div class="line">cd ..</div>
 <div class="line">colcon build</div>
-</div><!-- fragment --><p>Run the install_dependencies script to install the required dependencies.</p>
+</div><!-- fragment --><ol type="1">
+<li>Run the install_dependencies script to install the required dependencies.</li>
+</ol>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/scripts</div>
 <div class="line">chmod +x install_dependencies.sh</div>
 <div class="line">sudo ./install_dependencies.sh</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><ol type="1">
+<li>Repeat the last two steps with the <a href="https://github.com/grayson-arendt/Lunabotics-2024/external-dev.git">external-dev</a> branch on the host computer (not robot computer). This branch is for visualizing the robot in RViz2.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Setup Permissions and CTRE Phoenix Library</h1>
 <p>The rplidar_ros package needs to access /dev/ttyUSB0 and /dev/ttyUSB1 (using both lidars). While you can run <code>sudo chmod +x 777 /dev/ttyUSB0</code> for example, it would need to be ran each time on startup. To fix this, run the command below and restart the computer.</p>
 <div class="fragment"><div class="line">sudo usermod -a -G dialout $USER</div>
+</div><!-- fragment --><p>If the lidars are not under /dev/ttyUSB0 and /dev/ttyUSB1 (which may happen when disconnected and reconnected), use this command with one lidar connected at a time to check the number at the end. Adjust the parameter in <a class="el" href="sensor__launch_8py.html">sensor_launch.py</a> based off the number.</p>
+<div class="fragment"><div class="line">ls /dev/ttyUSB*</div>
 </div><!-- fragment --><p>The computer may not be able to find the shared object files for CTRE Phoenix library. An easy way to fix this is to directly copy them into /usr/lib/.</p>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/lunabot/autonomous_pkg/phoenix_lib/x86-64/</div>
 <div class="line">sudo cp libCTRE_Phoenix.so libCTRE_PhoenixCCI.so libCTRE_PhoenixTools.so /usr/lib/</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Running Robot</h1>
-<p>If you would like to see RViz2 on your host computer without cloning this branch, use the previous instructions to clone external-dev onto your computer and intel-dev onto the robot's computer. Running the second command in step 3 involves no cloning on host computer, but you will have to manually select all the robot topics for visualization.</p>
 <p>Each launch file should be ran in a new terminal window.</p>
+<p><code>Note: unplug and replug in the T265 after booting up the NUC, it will not detect it if it is not replugged in again.</code></p>
 <h3><a class="anchor" id="autotoc_md6"></a>
 1. Navigate to ROS 2 workspace and install (repeat on each new terminal before launches):</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;</div>
@@ -137,8 +145,6 @@ Running Robot</h1>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 3. Visualize with RViz2 (host computer):</h3>
 <div class="fragment"><div class="line">ros2 launch bringup external_launch.py</div>
-<div class="line"># or, just run RViz2 and manually add in all the topics:</div>
-<div class="line">rviz2</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
 4. Startup sensors:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup sensor_launch.py</div>
@@ -147,7 +153,7 @@ Running Robot</h1>
 5. Startup RTAB-Map and other nodes:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup mapping_launch.py</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
-6. Startup Navigation 2 stack:</h3>
+6. Startup Navigation 2:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup navigation_launch.py</div>
 </div><!-- fragment --><p>In RViz2 on the host computer, you will now be able to select a "Nav2 Goal" in the GUI and have the robot navigate to that location.</p>
 <h1><a class="anchor" id="autotoc_md12"></a>
@@ -160,31 +166,63 @@ Structure</h1>
 </li>
 <li><b>lunabot</b> (Contains code written specifically for Lunabotics robot)<ul>
 <li><b>autonomous</b><ul>
-<li><b>include</b></li>
-<li>ctre (CTRE Phoenix C++ API for using Falcon 500 motors)</li>
-<li><b>src</b> <br  />
-<ul>
+<li><b>scripts</b><ul>
+<li><a class="el" href="navigate__through__poses_8py.html">navigate_through_poses.py</a> (Navigates robot through multiple goals)</li>
+<li><a class="el" href="simple__commander_8py.html">simple_commander.py</a> (Simple Navigation 2 commander)</li>
+</ul>
+</li>
+<li><b>include</b><ul>
+<li><b>ctre</b> (CTRE Phoenix C++ API for using Falcon 500 motors)</li>
+</ul>
+</li>
+<li><b>phoenix_lib</b> (Contains shared object files for CTRE Phoenix C++ API)</li>
+<li><b>src</b><ul>
 <li><b>motor</b><ul>
 <li><a class="el" href="motor__controller_8cpp.html">motor_controller.cpp</a> (Sends percent output commands to motors based off /cmd_vel topic)</li>
 <li><a class="el" href="motor__test_8cpp.html">motor_test.cpp</a> (Simple node for testing motors)</li>
 </ul>
 </li>
 <li><b>navigation</b><ul>
-<li><a class="el" href="navigator__client_8cpp.html">navigator_client.cpp</a> (Action client for sending goals to Navigation 2 stack)</li>
-</ul>
-</li>
-<li><b>utilities</b><ul>
-<li><a class="el" href="imu__rotator__d455_8cpp.html">imu_rotator_d455.cpp</a> (Rotates the D455 IMU to be ENU)</li>
-<li><a class="el" href="imu__rotator__t265_8cpp.html">imu_rotator_t265.cpp</a> (Rotates the T265 IMU to be ENU)</li>
+<li><a class="el" href="navigator__client_8cpp.html">navigator_client.cpp</a> (Action client for sending goals to Navigation 2)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><b>bringup</b> (Contains launch files for running the robot, mapping with RTAB-Map, and navigating with the Navigation 2 stack)</li>
-<li><b>description</b> (Contains URDF for robot model)</li>
-<li><b>manual</b> (Contains node for driving robot with a controller) </li>
+<li><b>bringup</b><ul>
+<li><b>behavior_trees</b><ul>
+<li>navigate_to_pose_w_replanning_and_recovery.xml (Continuously replans path and backs up for recovery)</li>
+</ul>
+</li>
+<li><b>launch</b><ul>
+<li><a class="el" href="mapping__launch_8py.html">mapping_launch.py</a> (Launches static transforms, lidar odometry, motor controller node, and RTAB-Map)</li>
+<li><a class="el" href="navigation__launch_8py.html">navigation_launch.py</a> (Launches Navigation 2)</li>
+<li><a class="el" href="sensor__launch_8py.html">sensor_launch.py</a> (Launches lidars and cameras)</li>
+</ul>
+</li>
+<li><b>params</b><ul>
+<li>nav2_params.yaml (Parameters for Navigation 2)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>manual</b><ul>
+<li><b>include</b><ul>
+<li><b>ctre</b> (CTRE Phoenix C++ API for using Falcon 500 motors)</li>
+<li><b>manual</b><ul>
+<li><a class="el" href="_differential_drive_8hpp.html">DifferentialDrive.hpp</a> (Header for driving differential robot)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>phoenix_lib</b> (Contains shared object files for CTRE Phoenix C++ API)</li>
+<li><b>src</b><ul>
+<li><a class="el" href="manual__control_8cpp.html">manual_control.cpp</a> (Drives robot using a controller) </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

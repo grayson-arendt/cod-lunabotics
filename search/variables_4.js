@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['robot_5fwidth_117',['robot_width',['../class_differential_drive.html#a93b07f1a3f6aeb893e702ebc0e95ce4c',1,'DifferentialDrive']]]
+  ['nav_5fto_5fpose_5fclient_5f_218',['nav_to_pose_client_',['../class_navigator_client.html#aaae20f40adf6be2614d495045ca04505',1,'NavigatorClient']]],
+  ['num_5fparticles_219',['num_particles',['../class_particle_filter.html#a39a2de6d97b0a786a3ffc10d0eceec32',1,'ParticleFilter']]]
 ];

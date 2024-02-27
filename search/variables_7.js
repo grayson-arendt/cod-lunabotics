@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['velocity_5fleft_5fcmd_122',['velocity_left_cmd',['../class_motor_controller.html#a9c5eea5a4c649aadefd72e66f4d1e522',1,'MotorController']]],
-  ['velocity_5fright_5fcmd_123',['velocity_right_cmd',['../class_motor_controller.html#a9ed0797381e3f7e7cb2ad8b251606ecc',1,'MotorController']]]
+  ['robot_5fwidth_225',['robot_width',['../class_differential_drive.html#a93b07f1a3f6aeb893e702ebc0e95ce4c',1,'DifferentialDrive']]]
 ];

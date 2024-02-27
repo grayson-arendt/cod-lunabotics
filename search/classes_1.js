@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['imurotatord455_62',['IMURotatorD455',['../class_i_m_u_rotator_d455.html',1,'']]],
-  ['imurotatort265_63',['IMURotatorT265',['../class_i_m_u_rotator_t265.html',1,'']]]
+  ['manualcontrol_128',['ManualControl',['../class_manual_control.html',1,'']]],
+  ['motorcontroller_129',['MotorController',['../class_motor_controller.html',1,'']]],
+  ['motortest_130',['MotorTest',['../class_motor_test.html',1,'']]]
 ];

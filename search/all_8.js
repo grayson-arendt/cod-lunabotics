@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['main_21',['main',['../manual__control_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;manual_control.cpp'],['../navigator__client_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;navigator_client.cpp'],['../motor__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;motor_test.cpp'],['../motor__controller_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;motor_controller.cpp'],['../namespacesimple__commander.html#a9a78e233cff47c02c4f9ea548d77f799',1,'simple_commander.main()'],['../namespacenavigate__through__poses.html#a4966ddc4d12c264edddc1d16998f61a0',1,'navigate_through_poses.main()'],['../imu__rotator__d455_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;imu_rotator_d455.cpp'],['../imu__rotator__t265_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;imu_rotator_t265.cpp']]],
-  ['manual_5fcontrol_2ecpp_22',['manual_control.cpp',['../manual__control_8cpp.html',1,'']]],
-  ['manualcontrol_23',['ManualControl',['../class_manual_control.html#a6112a791a78671df137321125be2616a',1,'ManualControl::ManualControl()'],['../class_manual_control.html',1,'ManualControl']]],
-  ['mapping_5flaunch_24',['mapping_launch',['../namespacemapping__launch.html',1,'']]],
-  ['mapping_5flaunch_2epy_25',['mapping_launch.py',['../mapping__launch_8py.html',1,'']]],
-  ['module_5fto_5fimport_2epy_26',['module_to_import.py',['../module__to__import_8py.html',1,'']]],
-  ['motor_5fcontroller_2ecpp_27',['motor_controller.cpp',['../motor__controller_8cpp.html',1,'']]],
-  ['motor_5ftest_2ecpp_28',['motor_test.cpp',['../motor__test_8cpp.html',1,'']]],
-  ['motorcontroller_29',['MotorController',['../class_motor_controller.html#a1c32db157ba4b6dba1f2d6bc8891f16d',1,'MotorController::MotorController()'],['../class_motor_controller.html',1,'MotorController']]],
-  ['motortest_30',['MotorTest',['../class_motor_test.html#ab33b4ee937d347bb97aec4eb32b68c25',1,'MotorTest::MotorTest()'],['../class_motor_test.html',1,'MotorTest']]]
+  ['left_5fwheel_5fmotor_39',['left_wheel_motor',['../manual__control_8cpp.html#ab05ecc12358af4cbca5a1ba6f02a246a',1,'left_wheel_motor(2, interface):&#160;manual_control.cpp'],['../motor__test_8cpp.html#ab05ecc12358af4cbca5a1ba6f02a246a',1,'left_wheel_motor(2, interface):&#160;motor_test.cpp'],['../motor__controller_8cpp.html#a5091ba54f3216c8e3b3d7fb54f53276a',1,'left_wheel_motor(2):&#160;motor_controller.cpp']]],
+  ['lidar_5feuler_40',['lidar_euler',['../class_particle_filter.html#a71edc27d140d355a30bfa21e13c75a24',1,'ParticleFilter']]],
+  ['lidar_5fodometry_5fcallback_41',['lidar_odometry_callback',['../class_particle_filter.html#a173fc63ced10749dd5a3803609c38c2b',1,'ParticleFilter']]],
+  ['lidar_5fodometry_5fsubscriber_5f_42',['lidar_odometry_subscriber_',['../class_particle_filter.html#a05b9fe80c821f414c1dd26093bf47784',1,'ParticleFilter']]],
+  ['lidar_5forientation_5fw_43',['lidar_orientation_w',['../class_particle_filter.html#aac0f5e858d61d389a463333df93dafe8',1,'ParticleFilter']]],
+  ['lidar_5forientation_5fx_44',['lidar_orientation_x',['../class_particle_filter.html#a349ca1e70897262aca9666651eed0d2f',1,'ParticleFilter']]],
+  ['lidar_5forientation_5fy_45',['lidar_orientation_y',['../class_particle_filter.html#af489c3d5e53e236cb1ef78b8ede49a3e',1,'ParticleFilter']]],
+  ['lidar_5forientation_5fz_46',['lidar_orientation_z',['../class_particle_filter.html#a354957459b22c991dc5b5821e8d6dd7c',1,'ParticleFilter']]],
+  ['lidar_5fpitch_47',['lidar_pitch',['../class_particle_filter.html#aef5eee52b92797bb9e74a3824dd400bb',1,'ParticleFilter']]],
+  ['lidar_5fposition_5fx_48',['lidar_position_x',['../class_particle_filter.html#af5b6b6f6366dd96fbf3b898aec72a479',1,'ParticleFilter']]],
+  ['lidar_5fposition_5fy_49',['lidar_position_y',['../class_particle_filter.html#afd404dd58261e11b58b7b9542554971c',1,'ParticleFilter']]],
+  ['lidar_5fquaternion_50',['lidar_quaternion',['../class_particle_filter.html#a4e84accbfd9c8c09f80bab1c415a04d6',1,'ParticleFilter']]],
+  ['lidar_5froll_51',['lidar_roll',['../class_particle_filter.html#a36ad7b5312679cc37d210ed900e758ad',1,'ParticleFilter']]],
+  ['lidar_5fyaw_52',['lidar_yaw',['../class_particle_filter.html#ad9403bc2d2a8c1a38f176aacc3fd9c2a',1,'ParticleFilter']]],
+  ['log_5fweight_53',['log_weight',['../class_particle_filter.html#a25ada750eb508dcf3cf7981e84b76eef',1,'ParticleFilter']]]
 ];

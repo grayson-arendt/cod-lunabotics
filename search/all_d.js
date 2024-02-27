@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['send_5fgoal_47',['send_goal',['../class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50',1,'NavigatorClient']]],
-  ['sensor_5flaunch_48',['sensor_launch',['../namespacesensor__launch.html',1,'']]],
-  ['sensor_5flaunch_2epy_49',['sensor_launch.py',['../sensor__launch_8py.html',1,'']]],
-  ['simple_5fcommander_50',['simple_commander',['../namespacesimple__commander.html',1,'']]],
-  ['simple_5fcommander_2epy_51',['simple_commander.py',['../simple__commander_8py.html',1,'']]],
-  ['subscriber_5f_52',['subscriber_',['../class_i_m_u_rotator_d455.html#ae89b27eda60f3947899e7b7a73792725',1,'IMURotatorD455::subscriber_()'],['../class_i_m_u_rotator_t265.html#ac9d81f0ee47b7ab9b4163feefe884413',1,'IMURotatorT265::subscriber_()']]]
+  ['readme_2emd_88',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['resample_89',['resample',['../class_particle_filter.html#a84265f4c32f6d157da1d40677c6c47cf',1,'ParticleFilter']]],
+  ['result_5fcallback_90',['result_callback',['../class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf',1,'NavigatorClient']]],
+  ['right_5fwheel_5fmotor_91',['right_wheel_motor',['../motor__controller_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;motor_controller.cpp'],['../manual__control_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;manual_control.cpp']]],
+  ['robot_5fwidth_92',['robot_width',['../class_differential_drive.html#a93b07f1a3f6aeb893e702ebc0e95ce4c',1,'DifferentialDrive']]]
 ];
