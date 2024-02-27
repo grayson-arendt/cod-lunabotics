@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['particles_222',['particles',['../class_particle_filter.html#a4d73f797a7a4bfffbfbb4fd6d09114f9',1,'ParticleFilter']]],
-  ['percent_5foutput_223',['percent_output',['../class_differential_drive.html#ab63f1bfd3f2493bc0e6edbb8cbbba484',1,'DifferentialDrive']]],
-  ['prime_5fid_224',['prime_id',['../class_particle_filter.html#a3aacbbe3b81aa18969a0f346ead8d5f9',1,'ParticleFilter']]]
+  ['velocity_5fleft_5fcmd_102',['velocity_left_cmd',['../class_motor_controller.html#a9c5eea5a4c649aadefd72e66f4d1e522',1,'MotorController']]],
+  ['velocity_5fright_5fcmd_103',['velocity_right_cmd',['../class_motor_controller.html#a9ed0797381e3f7e7cb2ad8b251606ecc',1,'MotorController']]]
 ];

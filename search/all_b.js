@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['odometry_5fpublisher_5f_75',['odometry_publisher_',['../class_particle_filter.html#a554fabff12f7bf7fa4b1f99b68c27a30',1,'ParticleFilter']]],
-  ['odometry_5fpublisher_5ftimer_5f_76',['odometry_publisher_timer_',['../class_particle_filter.html#a2f73582ac398e8858885a42de07c5998',1,'ParticleFilter']]],
-  ['overview_77',['Overview',['../index.html',1,'']]]
+  ['percent_5foutput_35',['percent_output',['../class_differential_drive.html#ab63f1bfd3f2493bc0e6edbb8cbbba484',1,'DifferentialDrive']]],
+  ['phoenix_5fno_5fwpi_36',['Phoenix_No_WPI',['../motor__controller_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;motor_controller.cpp'],['../motor__test_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;motor_test.cpp'],['../manual__control_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;manual_control.cpp']]]
 ];

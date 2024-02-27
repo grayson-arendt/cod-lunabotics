@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['odometry_5fpublisher_5f_220',['odometry_publisher_',['../class_particle_filter.html#a554fabff12f7bf7fa4b1f99b68c27a30',1,'ParticleFilter']]],
-  ['odometry_5fpublisher_5ftimer_5f_221',['odometry_publisher_timer_',['../class_particle_filter.html#a2f73582ac398e8858885a42de07c5998',1,'ParticleFilter']]]
+  ['theta_99',['theta',['../class_differential_drive.html#a4383cfbdf3df328366568b8b7902bda9',1,'DifferentialDrive']]],
+  ['timer_5f_100',['timer_',['../class_motor_controller.html#a85acbd44a81b823d5cab90df208d70d4',1,'MotorController::timer_()'],['../class_navigator_client.html#ad06e2cdacbc132abd4e70c6943e9dc76',1,'NavigatorClient::timer_()']]],
+  ['turning_5fradius_101',['turning_radius',['../class_differential_drive.html#aeab388e83ff50dd847a32560c1528fa9',1,'DifferentialDrive']]]
 ];
