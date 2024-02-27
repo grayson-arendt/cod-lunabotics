@@ -92,9 +92,9 @@ Dependencies</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Installation</h1>
-<ol type="1">
-<li>Download the source code for <a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1">this</a> release and install. <code>Note: this repository contains realsense-ros version 4.51.1 in external directory. This is because support was dropped for the T265 camera in later releases.</code></li>
-</ol>
+<h3><a class="anchor" id="autotoc_md4"></a>
+1. Download the source code for &lt;a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1"&gt;this&lt;/a&gt; release and install.</h3>
+<p><code>Note: this repository contains realsense-ros version 4.51.1 in external directory. This is because support was dropped for the T265 camera in later releases.</code></p>
 <div class="fragment"><div class="line">cd Downloads/</div>
 <div class="line">tar -xzvf librealsense-2.53.1.tar.gz</div>
 <div class="line">cd librealsense-2.53.1/</div>
@@ -104,23 +104,20 @@ Installation</h1>
 <div class="line">cd ..</div>
 <div class="line">cd scripts</div>
 <div class="line">./setup_udev_rules.sh</div>
-</div><!-- fragment --><ol type="1">
-<li>Next, clone and build the repository.</li>
-</ol>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
+2. Next, clone and build the repository.</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src</div>
 <div class="line">git clone https://github.com/grayson-arendt/Lunabotics-2024.git</div>
 <div class="line">cd ..</div>
 <div class="line">colcon build</div>
-</div><!-- fragment --><ol type="1">
-<li>Run the install_dependencies script to install the required dependencies.</li>
-</ol>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+3. Run the install_dependencies script to install the required dependencies.</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/scripts</div>
 <div class="line">chmod +x install_dependencies.sh</div>
 <div class="line">sudo ./install_dependencies.sh</div>
-</div><!-- fragment --><ol type="1">
-<li>Repeat the last two steps with the <a href="https://github.com/grayson-arendt/Lunabotics-2024/external-dev.git">external-dev</a> branch on the host computer (not robot computer). This branch is for visualizing the robot in RViz2.</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+4. Repeat the last two steps with the &lt;a href="https://github.com/grayson-arendt/Lunabotics-2024/external-dev.git"&gt;external-dev&lt;/a&gt; branch on the host computer (not robot computer). This branch is for visualizing the robot in RViz2.</h3>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Setup Permissions and CTRE Phoenix Library</h1>
 <p>The rplidar_ros package needs to access /dev/ttyUSB0 and /dev/ttyUSB1 (using both lidars). While you can run <code>sudo chmod +x 777 /dev/ttyUSB0</code> for example, it would need to be ran each time on startup. To fix this, run the command below and restart the computer.</p>
 <div class="fragment"><div class="line">sudo usermod -a -G dialout $USER</div>
@@ -129,34 +126,34 @@ Setup Permissions and CTRE Phoenix Library</h1>
 </div><!-- fragment --><p>The computer may not be able to find the shared object files for CTRE Phoenix library. An easy way to fix this is to directly copy them into /usr/lib/.</p>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/lunabot/autonomous_pkg/phoenix_lib/x86-64/</div>
 <div class="line">sudo cp libCTRE_Phoenix.so libCTRE_PhoenixCCI.so libCTRE_PhoenixTools.so /usr/lib/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
 Running Robot</h1>
 <p>Each launch file should be ran in a new terminal window.</p>
 <p><code>Note: unplug and replug in the T265 after booting up the NUC, it will not detect it if it is not replugged in again.</code></p>
-<h3><a class="anchor" id="autotoc_md6"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 1. Navigate to ROS 2 workspace and install (repeat on each new terminal before launches):</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;</div>
 <div class="line">source install/setup.bash</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 2. Initialize SocketCAN communication (note: the canable_start.sh script will only need to be ran once each time the robot computer boots up).</h3>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/scripts</div>
 <div class="line">chmod +x canable_start.sh </div>
 <div class="line">./canable_start.sh</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
 3. Visualize with RViz2 (host computer):</h3>
 <div class="fragment"><div class="line">ros2 launch bringup external_launch.py</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
 4. Startup sensors:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup sensor_launch.py</div>
 </div><!-- fragment --><p> <code>Note: this is a separate launch file in order to check conditions of sensors before trying to start everything else.</code></p>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 5. Startup RTAB-Map and other nodes:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup mapping_launch.py</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
 6. Startup Navigation 2:</h3>
 <div class="fragment"><div class="line">ros2 launch bringup navigation_launch.py</div>
 </div><!-- fragment --><p>In RViz2 on the host computer, you will now be able to select a "Nav2 Goal" in the GUI and have the robot navigate to that location.</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Structure</h1>
 <ul>
 <li><b>external</b> (Packages from external sources)<ul>
