@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>College of DuPage Lunabotics: /home/grayson/Lunabotics-2024/lunabot/autonomous/src/navigation/navigator_client.cpp File Reference</title>
+<title>College of DuPage Lunabotics: /home/grayson/Lunabotics-2024/lunabot/autonomous/src/navigator_client.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf9e983d8d166197a63260d6c9dce1ea.html">Lunabotics-2024</a></li><li class="navelem"><a class="el" href="dir_a1bbbb3cb1e9e23a333422cb02546583.html">lunabot</a></li><li class="navelem"><a class="el" href="dir_07873914402306937f31af229b4254cd.html">autonomous</a></li><li class="navelem"><a class="el" href="dir_3acdcf7ff980f93b3b6692091e506b5d.html">src</a></li><li class="navelem"><a class="el" href="dir_6ebc807c311f7b5ab562aeb50688c4f0.html">navigation</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bf9e983d8d166197a63260d6c9dce1ea.html">Lunabotics-2024</a></li><li class="navelem"><a class="el" href="dir_a1bbbb3cb1e9e23a333422cb02546583.html">lunabot</a></li><li class="navelem"><a class="el" href="dir_07873914402306937f31af229b4254cd.html">autonomous</a></li><li class="navelem"><a class="el" href="dir_3acdcf7ff980f93b3b6692091e506b5d.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,16 +74,16 @@ $(function() {
 <div class="title">navigator_client.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;geometry_msgs/msg/pose.hpp&quot;</code><br />
-<code>#include &quot;geometry_msgs/msg/pose_stamped.hpp&quot;</code><br />
-<code>#include &quot;nav2_msgs/action/navigate_to_pose.hpp&quot;</code><br />
-<code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
 <code>#include &quot;rclcpp_action/rclcpp_action.hpp&quot;</code><br />
+<code>#include &quot;nav2_msgs/action/navigate_to_pose.hpp&quot;</code><br />
+<code>#include &quot;geometry_msgs/msg/pose.hpp&quot;</code><br />
+<code>#include &quot;autonomous/msg/control.hpp&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html">NavigatorClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action client for the Navigation2 navigate_to_pose action server.  <a href="class_navigator_client.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends two goals to the navigation action server as an action client.  <a href="class_navigator_client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<p>Initializes and spins the <a class="el" href="class_navigator_client.html" title="Action client for the Navigation2 navigate_to_pose action server.">NavigatorClient</a> node. </p>
+<p>Initializes and spins the <a class="el" href="class_navigator_client.html" title="Sends two goals to the navigation action server as an action client.">NavigatorClient</a> node </p>
 
 </div>
 </div>

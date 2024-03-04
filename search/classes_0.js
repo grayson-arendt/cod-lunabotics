@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['differentialdrive_52',['DifferentialDrive',['../class_differential_drive.html',1,'']]]
+  ['conditionalbool_84',['ConditionalBool',['../classmapping__launch_1_1_conditional_bool.html',1,'mapping_launch']]],
+  ['conditionaltext_85',['ConditionalText',['../classmapping__launch_1_1_conditional_text.html',1,'mapping_launch']]]
 ];

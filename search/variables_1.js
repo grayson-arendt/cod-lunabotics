@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interface_95',['interface',['../motor__test_8cpp.html#a4085c6d12a57b11755a4b6ceae4da39a',1,'interface():&#160;motor_test.cpp'],['../manual__control_8cpp.html#a4085c6d12a57b11755a4b6ceae4da39a',1,'interface():&#160;manual_control.cpp']]]
+  ['bucket_5fpower_137',['bucket_power',['../class_robot_controller.html#a215729f1f986d0e9a497630a18a351f1',1,'RobotController']]]
 ];

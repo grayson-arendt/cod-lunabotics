@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['calculate_5fwheel_5fpercentoutput_77',['calculate_wheel_percentOutput',['../class_differential_drive.html#a5ac265255d9c0fdee0d3075918d3d2f2',1,'DifferentialDrive']]],
-  ['callbackcontrolrobot_78',['callbackControlRobot',['../class_manual_control.html#a6dcccd9d56883f4dabf093e86c3dd62d',1,'ManualControl']]],
-  ['callbackmotors_79',['callbackMotors',['../class_motor_controller.html#a2bd4cb67d2c97ba9188bbb281b375a92',1,'MotorController::callbackMotors()'],['../class_motor_test.html#a621fcb9bec30d546960f9fb36a22b14f',1,'MotorTest::callbackMotors()']]]
+  ['_5f_5finit_5f_5f_107',['__init__',['../classmapping__launch_1_1_conditional_text.html#a50c4a1e28f5825d32557258e9994abc9',1,'mapping_launch.ConditionalText.__init__()'],['../classmapping__launch_1_1_conditional_bool.html#a5686a590ec7474ec6d2a9ffd09845fbb',1,'mapping_launch.ConditionalBool.__init__()']]]
 ];

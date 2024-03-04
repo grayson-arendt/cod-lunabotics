@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['theta_99',['theta',['../class_differential_drive.html#a4383cfbdf3df328366568b8b7902bda9',1,'DifferentialDrive']]],
-  ['timer_5f_100',['timer_',['../class_motor_controller.html#a85acbd44a81b823d5cab90df208d70d4',1,'MotorController::timer_()'],['../class_navigator_client.html#ad06e2cdacbc132abd4e70c6943e9dc76',1,'NavigatorClient::timer_()']]],
-  ['turning_5fradius_101',['turning_radius',['../class_differential_drive.html#aeab388e83ff50dd847a32560c1528fa9',1,'DifferentialDrive']]]
+  ['intake_5fdirection_146',['intake_direction',['../class_robot_controller.html#a40fa689945f4c41bd3ab90b7746fa8bc',1,'RobotController']]]
 ];

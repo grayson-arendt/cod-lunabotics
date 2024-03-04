@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['robot_5fwidth_98',['robot_width',['../class_differential_drive.html#a93b07f1a3f6aeb893e702ebc0e95ce4c',1,'DifferentialDrive']]]
+  ['goal_5faborted_143',['goal_aborted',['../class_navigator_client.html#a6e1b38ee1f8d6a777b461f3b4bf28944',1,'NavigatorClient']]],
+  ['goal_5fcanceled_144',['goal_canceled',['../class_navigator_client.html#a19c247dacffcbc481a243c145ebcc999',1,'NavigatorClient']]],
+  ['goal_5freached_145',['goal_reached',['../class_navigator_client.html#a59e1259368bd1dcfcb9d1a428edf9a6d',1,'NavigatorClient']]]
 ];

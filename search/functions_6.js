@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['navigatorclient_89',['NavigatorClient',['../class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5',1,'NavigatorClient']]]
+  ['hardwaremonitor_119',['HardwareMonitor',['../class_hardware_monitor.html#ade43e5755367d6d258c88d600917aae4',1,'HardwareMonitor']]]
 ];

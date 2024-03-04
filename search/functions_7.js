@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['result_5fcallback_90',['result_callback',['../class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf',1,'NavigatorClient']]],
-  ['right_5fwheel_5fmotor_91',['right_wheel_motor',['../motor__controller_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;motor_controller.cpp'],['../manual__control_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;manual_control.cpp']]]
+  ['joy_5fcallback_120',['joy_callback',['../class_robot_controller.html#ae4d8b66245c5f8ef1df7bba8f6158e21',1,'RobotController']]]
 ];

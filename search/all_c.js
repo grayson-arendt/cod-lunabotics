@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['readme_2emd_37',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['result_5fcallback_38',['result_callback',['../class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf',1,'NavigatorClient']]],
-  ['right_5fwheel_5fmotor_39',['right_wheel_motor',['../motor__controller_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;motor_controller.cpp'],['../manual__control_8cpp.html#ab5c6624e7f40ade79161e4ebd8c2c99c',1,'right_wheel_motor(3):&#160;manual_control.cpp']]],
-  ['robot_5fwidth_40',['robot_width',['../class_differential_drive.html#a93b07f1a3f6aeb893e702ebc0e95ce4c',1,'DifferentialDrive']]]
+  ['nav_5fto_5fpose_5fclient_5f_54',['nav_to_pose_client_',['../class_navigator_client.html#aaae20f40adf6be2614d495045ca04505',1,'NavigatorClient']]],
+  ['navigate_5fto_5fexcavation_55',['navigate_to_excavation',['../class_navigator_client.html#a915260609e36241a29d78dee70f71d9c',1,'NavigatorClient']]],
+  ['navigatetopose_56',['NavigateToPose',['../class_navigator_client.html#a6c04b7fd3a427f13fc9a1fb5a38e9f1f',1,'NavigatorClient']]],
+  ['navigation_5flaunch_57',['navigation_launch',['../namespacenavigation__launch.html',1,'']]],
+  ['navigation_5flaunch_2epy_58',['navigation_launch.py',['../navigation__launch_8py.html',1,'']]],
+  ['navigator_5fclient_2ecpp_59',['navigator_client.cpp',['../navigator__client_8cpp.html',1,'']]],
+  ['navigatorclient_60',['NavigatorClient',['../class_navigator_client.html',1,'NavigatorClient'],['../class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5',1,'NavigatorClient::NavigatorClient()']]]
 ];

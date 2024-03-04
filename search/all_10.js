@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wheelpercentoutput_51',['wheelPercentOutput',['../class_differential_drive.html#aacd20a12e3f5f00d015dff2b26a5dc28',1,'DifferentialDrive']]]
+  ['send_5fgoal_72',['send_goal',['../class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50',1,'NavigatorClient']]],
+  ['start_5fmechanism_73',['start_mechanism',['../class_robot_controller.html#ab1d71496249a3a9608802725ba55a3ac',1,'RobotController']]]
 ];

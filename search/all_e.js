@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['theta_46',['theta',['../class_differential_drive.html#a4383cfbdf3df328366568b8b7902bda9',1,'DifferentialDrive']]],
-  ['timer_5f_47',['timer_',['../class_motor_controller.html#a85acbd44a81b823d5cab90df208d70d4',1,'MotorController::timer_()'],['../class_navigator_client.html#ad06e2cdacbc132abd4e70c6943e9dc76',1,'NavigatorClient::timer_()']]],
-  ['turning_5fradius_48',['turning_radius',['../class_differential_drive.html#aeab388e83ff50dd847a32560c1528fa9',1,'DifferentialDrive']]]
+  ['perform_62',['perform',['../classmapping__launch_1_1_conditional_text.html#ab078f20cdd197280bf15439d061d71d9',1,'mapping_launch.ConditionalText.perform()'],['../classmapping__launch_1_1_conditional_bool.html#a63f70d4324c43efbc392c420dc336111',1,'mapping_launch.ConditionalBool.perform()']]],
+  ['phoenix_5fno_5fwpi_63',['Phoenix_No_WPI',['../motor__test_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;motor_test.cpp'],['../robot__controller_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;robot_controller.cpp']]],
+  ['publisher_5f_64',['publisher_',['../class_navigator_client.html#ab487d107044cd3ac0b052072d24da329',1,'NavigatorClient']]]
 ];

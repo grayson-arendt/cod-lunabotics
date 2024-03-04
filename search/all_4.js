@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['feedback_5fcallback_10',['feedback_callback',['../class_navigator_client.html#af526338e91b47a7241b74618cffa27b8',1,'NavigatorClient']]]
+  ['d455_5fsubscriber_5f_20',['d455_subscriber_',['../class_hardware_monitor.html#acb042cea2481f373a52ff479c8facda3',1,'HardwareMonitor']]],
+  ['d455_5ftimer_5f_21',['d455_timer_',['../class_hardware_monitor.html#ab819e8a75b3bf57f7ba402e57ad43a46',1,'HardwareMonitor']]]
 ];

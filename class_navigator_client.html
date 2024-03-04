@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Action client for the Navigation2 navigate_to_pose action server.  
+<p>Sends two goals to the navigation action server as an action client.  
  <a href="class_navigator_client.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for NavigatorClient:</div>
@@ -93,30 +93,53 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a87965cdb79aee64b4d35e750c60a3ce5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5">NavigatorClient</a> ()</td></tr>
-<tr class="memdesc:a87965cdb79aee64b4d35e750c60a3ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_navigator_client.html" title="Action client for the Navigation2 navigate_to_pose action server.">NavigatorClient</a>.  <a href="class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5">More...</a><br /></td></tr>
+<tr class="memdesc:a87965cdb79aee64b4d35e750c60a3ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_navigator_client.html" title="Sends two goals to the navigation action server as an action client.">NavigatorClient</a> class.  <a href="class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5">More...</a><br /></td></tr>
 <tr class="separator:a87965cdb79aee64b4d35e750c60a3ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522176c0b783eec8db87e31a517b4c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50">send_goal</a> ()</td></tr>
-<tr class="memdesc:a522176c0b783eec8db87e31a517b4c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the goal to the action server.  <a href="class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50">More...</a><br /></td></tr>
+<tr class="memdesc:a522176c0b783eec8db87e31a517b4c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the navigation goal.  <a href="class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50">More...</a><br /></td></tr>
 <tr class="separator:a522176c0b783eec8db87e31a517b4c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:af526338e91b47a7241b74618cffa27b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#af526338e91b47a7241b74618cffa27b8">feedback_callback</a> (GoalHandleNavigate::SharedPtr goal_handle, const std::shared_ptr&lt; const NavigateToPose::Feedback &gt; feedback)</td></tr>
-<tr class="memdesc:af526338e91b47a7241b74618cffa27b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for processing feedback from the action server.  <a href="class_navigator_client.html#af526338e91b47a7241b74618cffa27b8">More...</a><br /></td></tr>
-<tr class="separator:af526338e91b47a7241b74618cffa27b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c79471a02c139b0f11b6fbb279035e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a1c79471a02c139b0f11b6fbb279035e6">enable_intake</a> ()</td></tr>
+<tr class="memdesc:a1c79471a02c139b0f11b6fbb279035e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the intake process.  <a href="class_navigator_client.html#a1c79471a02c139b0f11b6fbb279035e6">More...</a><br /></td></tr>
+<tr class="separator:a1c79471a02c139b0f11b6fbb279035e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0cd7d14e3c75534f20e5b1d77d2301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#acd0cd7d14e3c75534f20e5b1d77d2301">enable_outtake</a> ()</td></tr>
+<tr class="memdesc:acd0cd7d14e3c75534f20e5b1d77d2301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the outtake process.  <a href="class_navigator_client.html#acd0cd7d14e3c75534f20e5b1d77d2301">More...</a><br /></td></tr>
+<tr class="separator:acd0cd7d14e3c75534f20e5b1d77d2301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58aeee1de1d2da88b218326f8d79c5ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a58aeee1de1d2da88b218326f8d79c5ff">actuator_up</a> ()</td></tr>
+<tr class="memdesc:a58aeee1de1d2da88b218326f8d79c5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the actuator up.  <a href="class_navigator_client.html#a58aeee1de1d2da88b218326f8d79c5ff">More...</a><br /></td></tr>
+<tr class="separator:a58aeee1de1d2da88b218326f8d79c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf77cef7e36279cfb9514c21969b564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a5cf77cef7e36279cfb9514c21969b564">actuator_down</a> ()</td></tr>
+<tr class="memdesc:a5cf77cef7e36279cfb9514c21969b564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the actuator down.  <a href="class_navigator_client.html#a5cf77cef7e36279cfb9514c21969b564">More...</a><br /></td></tr>
+<tr class="separator:a5cf77cef7e36279cfb9514c21969b564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901ca514d60c7908033cf28e7e543b7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a901ca514d60c7908033cf28e7e543b7e">enable_manual_drive</a> ()</td></tr>
+<tr class="memdesc:a901ca514d60c7908033cf28e7e543b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables manual drive control.  <a href="class_navigator_client.html#a901ca514d60c7908033cf28e7e543b7e">More...</a><br /></td></tr>
+<tr class="separator:a901ca514d60c7908033cf28e7e543b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501c0577558ef3fe526f0c0ac34adfbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf">result_callback</a> (const GoalHandleNavigate::WrappedResult &amp;result)</td></tr>
-<tr class="memdesc:a501c0577558ef3fe526f0c0ac34adfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for processing the result from the action server.  <a href="class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf">More...</a><br /></td></tr>
+<tr class="memdesc:a501c0577558ef3fe526f0c0ac34adfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for result.  <a href="class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf">More...</a><br /></td></tr>
 <tr class="separator:a501c0577558ef3fe526f0c0ac34adfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aaae20f40adf6be2614d495045ca04505"><td class="memItemLeft" align="right" valign="top">rclcpp_action::Client&lt; <a class="el" href="class_navigator_client.html#a6c04b7fd3a427f13fc9a1fb5a38e9f1f">NavigateToPose</a> &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#aaae20f40adf6be2614d495045ca04505">nav_to_pose_client_</a></td></tr>
 <tr class="separator:aaae20f40adf6be2614d495045ca04505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab487d107044cd3ac0b052072d24da329"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; autonomous::msg::Control &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#ab487d107044cd3ac0b052072d24da329">publisher_</a></td></tr>
+<tr class="separator:ab487d107044cd3ac0b052072d24da329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06e2cdacbc132abd4e70c6943e9dc76"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#ad06e2cdacbc132abd4e70c6943e9dc76">timer_</a></td></tr>
 <tr class="separator:ad06e2cdacbc132abd4e70c6943e9dc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e1259368bd1dcfcb9d1a428edf9a6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a59e1259368bd1dcfcb9d1a428edf9a6d">goal_reached</a></td></tr>
+<tr class="separator:a59e1259368bd1dcfcb9d1a428edf9a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1b38ee1f8d6a777b461f3b4bf28944"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a6e1b38ee1f8d6a777b461f3b4bf28944">goal_aborted</a></td></tr>
+<tr class="separator:a6e1b38ee1f8d6a777b461f3b4bf28944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c247dacffcbc481a243c145ebcc999"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a19c247dacffcbc481a243c145ebcc999">goal_canceled</a></td></tr>
+<tr class="separator:a19c247dacffcbc481a243c145ebcc999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915260609e36241a29d78dee70f71d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navigator_client.html#a915260609e36241a29d78dee70f71d9c">navigate_to_excavation</a></td></tr>
+<tr class="separator:a915260609e36241a29d78dee70f71d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Action client for the Navigation2 navigate_to_pose action server. </p>
+<div class="textblock"><p>Sends two goals to the navigation action server as an action client. </p>
+<p>After a goal is reached, this node will publish booleans to the /control topic to enable the specific mechanisms for that goal</p>
 <dl class="section author"><dt>Author</dt><dd>Grayson Arendt </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3665111c0176caf2de665d93744ddbd3"></a>
@@ -171,13 +194,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="class_navigator_client.html" title="Action client for the Navigation2 navigate_to_pose action server.">NavigatorClient</a>. </p>
+<p>Constructor for <a class="el" href="class_navigator_client.html" title="Sends two goals to the navigation action server as an action client.">NavigatorClient</a> class. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af526338e91b47a7241b74618cffa27b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af526338e91b47a7241b74618cffa27b8">&#9670;&nbsp;</a></span>feedback_callback()</h2>
+<a id="a5cf77cef7e36279cfb9514c21969b564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf77cef7e36279cfb9514c21969b564">&#9670;&nbsp;</a></span>actuator_down()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,21 +209,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void NavigatorClient::feedback_callback </td>
+          <td class="memname">void NavigatorClient::actuator_down </td>
           <td>(</td>
-          <td class="paramtype">GoalHandleNavigate::SharedPtr&#160;</td>
-          <td class="paramname"><em>goal_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; const NavigateToPose::Feedback &gt;&#160;</td>
-          <td class="paramname"><em>feedback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -210,14 +222,115 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback for processing feedback from the action server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">goal_handle</td><td>The handle to the goal. </td></tr>
-    <tr><td class="paramname">feedback</td><td>The received feedback. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Moves the actuator down. </p>
+
+</div>
+</div>
+<a id="a58aeee1de1d2da88b218326f8d79c5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58aeee1de1d2da88b218326f8d79c5ff">&#9670;&nbsp;</a></span>actuator_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NavigatorClient::actuator_up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the actuator up. </p>
+
+</div>
+</div>
+<a id="a1c79471a02c139b0f11b6fbb279035e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c79471a02c139b0f11b6fbb279035e6">&#9670;&nbsp;</a></span>enable_intake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NavigatorClient::enable_intake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables the intake process. </p>
+
+</div>
+</div>
+<a id="a901ca514d60c7908033cf28e7e543b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901ca514d60c7908033cf28e7e543b7e">&#9670;&nbsp;</a></span>enable_manual_drive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NavigatorClient::enable_manual_drive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables manual drive control. </p>
+
+</div>
+</div>
+<a id="acd0cd7d14e3c75534f20e5b1d77d2301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0cd7d14e3c75534f20e5b1d77d2301">&#9670;&nbsp;</a></span>enable_outtake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NavigatorClient::enable_outtake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables the outtake process. </p>
 
 </div>
 </div>
@@ -245,10 +358,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback for processing the result from the action server. </p>
+<p>Callback function for result. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">result</td><td>The wrapped result. </td></tr>
+    <tr><td class="paramname">result</td><td>The result of the navigation goal </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,11 +391,77 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends the goal to the action server. </p>
+<p>Sends the navigation goal. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6e1b38ee1f8d6a777b461f3b4bf28944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1b38ee1f8d6a777b461f3b4bf28944">&#9670;&nbsp;</a></span>goal_aborted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NavigatorClient::goal_aborted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19c247dacffcbc481a243c145ebcc999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c247dacffcbc481a243c145ebcc999">&#9670;&nbsp;</a></span>goal_canceled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NavigatorClient::goal_canceled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59e1259368bd1dcfcb9d1a428edf9a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e1259368bd1dcfcb9d1a428edf9a6d">&#9670;&nbsp;</a></span>goal_reached</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NavigatorClient::goal_reached</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaae20f40adf6be2614d495045ca04505"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaae20f40adf6be2614d495045ca04505">&#9670;&nbsp;</a></span>nav_to_pose_client_</h2>
 
@@ -294,6 +473,50 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">rclcpp_action::Client&lt;<a class="el" href="class_navigator_client.html#a6c04b7fd3a427f13fc9a1fb5a38e9f1f">NavigateToPose</a>&gt;::SharedPtr NavigatorClient::nav_to_pose_client_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a915260609e36241a29d78dee70f71d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915260609e36241a29d78dee70f71d9c">&#9670;&nbsp;</a></span>navigate_to_excavation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NavigatorClient::navigate_to_excavation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab487d107044cd3ac0b052072d24da329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab487d107044cd3ac0b052072d24da329">&#9670;&nbsp;</a></span>publisher_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Publisher&lt;autonomous::msg::Control&gt;::SharedPtr NavigatorClient::publisher_</td>
         </tr>
       </table>
   </td>
@@ -328,7 +551,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/src/navigation/<a class="el" href="navigator__client_8cpp.html">navigator_client.cpp</a></li>
+<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/src/<a class="el" href="navigator__client_8cpp.html">navigator_client.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
