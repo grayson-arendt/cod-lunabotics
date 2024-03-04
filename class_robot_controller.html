@@ -199,7 +199,7 @@ Private Attributes</h2></td></tr>
 <p>Callback function for activating digging or depositing mechanisms based off of /control topic. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">control_msg</td><td>The received Control message containing booleans to enable specific mechanisms </td></tr>
+    <tr><td class="paramname">control_msg</td><td>The received Control message containing booleans to enable specific mechanisms. </td></tr>
   </table>
   </dd>
 </dl>
@@ -233,7 +233,7 @@ Private Attributes</h2></td></tr>
 <p>Callback function for processing velocity commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">velocity_msg</td><td>The received Twist message containing velocity </td></tr>
+    <tr><td class="paramname">velocity_msg</td><td>The received Twist message containing velocity. </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,7 +267,7 @@ Private Attributes</h2></td></tr>
 <p>Callback function for processing controller input and manually controlling robot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">joy_msg</td><td>The received Joy message containing controller input </td></tr>
+    <tr><td class="paramname">joy_msg</td><td>The received Joy message containing controller input. </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,9 +319,9 @@ template&lt;typename MotorType &gt; </div>
 <p>Callback function for starting mechanisms. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of mechanism </td></tr>
-    <tr><td class="paramname">motor</td><td>The motor associated with the mechanism </td></tr>
-    <tr><td class="paramname">percent_output</td><td>The percent output speed of the mechanism </td></tr>
+    <tr><td class="paramname">name</td><td>The name of mechanism. </td></tr>
+    <tr><td class="paramname">motor</td><td>The motor object associated with the mechanism. </td></tr>
+    <tr><td class="paramname">percent_output</td><td>The percent output speed of the mechanism. </td></tr>
   </table>
   </dd>
 </dl>
