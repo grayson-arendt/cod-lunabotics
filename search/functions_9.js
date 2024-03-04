@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main_115',['main',['../hardware__monitor_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;hardware_monitor.cpp'],['../motor__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;motor_test.cpp'],['../navigator__client_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;navigator_client.cpp'],['../robot__controller_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;robot_controller.cpp']]],
-  ['motor_116',['motor',['../motor__test_8cpp.html#a509d49b10dbb54a151f0f90d6abdcd6b',1,'motor_test.cpp']]],
-  ['motortest_117',['MotorTest',['../class_motor_test.html#ab33b4ee937d347bb97aec4eb32b68c25',1,'MotorTest']]]
+  ['result_5fcallback_89',['result_callback',['../class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf',1,'NavigatorClient']]],
+  ['right_5fwheel_5fmotor_90',['right_wheel_motor',['../robot__controller_8cpp.html#ab85904552d8a59fb05afec9909a72b82',1,'robot_controller.cpp']]],
+  ['robotcontroller_91',['RobotController',['../class_robot_controller.html#a1b3379c8c3350b2130f30c8bd23cba33',1,'RobotController']]]
 ];

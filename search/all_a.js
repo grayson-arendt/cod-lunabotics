@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['launch_5fsetup_36',['launch_setup',['../namespacemapping__launch.html#ab75cbdeec24818f0dc7b3448f4cd8431',1,'mapping_launch']]],
-  ['left_5fpower_37',['left_power',['../class_robot_controller.html#afeb5fbe12e61b6d802dea53f4f67d923',1,'RobotController']]],
-  ['left_5fwheel_5fmotor_38',['left_wheel_motor',['../robot__controller_8cpp.html#afb1fc34d1093137b4ef279f542684715',1,'robot_controller.cpp']]],
-  ['lidar1_5fsubscriber_5f_39',['lidar1_subscriber_',['../class_hardware_monitor.html#ad55a28343d59823102704c1f0eca0185',1,'HardwareMonitor']]],
-  ['lidar1_5ftimer_5f_40',['lidar1_timer_',['../class_hardware_monitor.html#a28b970dedd651ec57ca04de7aafb58f2',1,'HardwareMonitor']]],
-  ['lidar2_5fsubscriber_5f_41',['lidar2_subscriber_',['../class_hardware_monitor.html#a315c5f3ba7ed8caf72903f3443a0df54',1,'HardwareMonitor']]],
-  ['lidar2_5ftimer_5f_42',['lidar2_timer_',['../class_hardware_monitor.html#a50b97f19e9a9f7295510a4969e5abcdc',1,'HardwareMonitor']]]
+  ['main_33',['main',['../hardware__monitor_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;hardware_monitor.cpp'],['../motor__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;motor_test.cpp'],['../navigator__client_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;navigator_client.cpp'],['../robot__controller_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;robot_controller.cpp']]],
+  ['manual_5fenabled_34',['manual_enabled',['../class_robot_controller.html#a0852dc0004384e168b15a96646b5a86e',1,'RobotController']]],
+  ['motor_35',['motor',['../motor__test_8cpp.html#a509d49b10dbb54a151f0f90d6abdcd6b',1,'motor_test.cpp']]],
+  ['motor_5ftest_2ecpp_36',['motor_test.cpp',['../motor__test_8cpp.html',1,'']]],
+  ['motortest_37',['MotorTest',['../class_motor_test.html',1,'MotorTest'],['../class_motor_test.html#ab33b4ee937d347bb97aec4eb32b68c25',1,'MotorTest::MotorTest()']]]
 ];

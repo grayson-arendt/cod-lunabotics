@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['launch_5fsetup_113',['launch_setup',['../namespacemapping__launch.html#ab75cbdeec24818f0dc7b3448f4cd8431',1,'mapping_launch']]],
-  ['left_5fwheel_5fmotor_114',['left_wheel_motor',['../robot__controller_8cpp.html#afb1fc34d1093137b4ef279f542684715',1,'robot_controller.cpp']]]
+  ['navigatorclient_88',['NavigatorClient',['../class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5',1,'NavigatorClient']]]
 ];

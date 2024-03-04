@@ -126,7 +126,7 @@ Installation</h1>
 Setup Permissions and CTRE Phoenix Library</h1>
 <p>The rplidar_ros package needs to access /dev/ttyUSB0 and /dev/ttyUSB1 (using both lidars). While you can run <code>sudo chmod +x 777 /dev/ttyUSB0</code> for example, it would need to be ran each time on startup. To fix this, run the command below and restart the computer.</p>
 <div class="fragment"><div class="line">sudo usermod -a -G dialout $USER</div>
-</div><!-- fragment --><p>If the lidars are not under /dev/ttyUSB0 and /dev/ttyUSB1 (which may happen when disconnected and reconnected), use this command with one lidar connected at a time to check the number at the end. Adjust the parameter in <a class="el" href="hardware__launch_8py.html">hardware_launch.py</a> based off the number.</p>
+</div><!-- fragment --><p>If the lidars are not under /dev/ttyUSB0 and /dev/ttyUSB1 (which may happen when disconnected and reconnected), use this command with one lidar connected at a time to check the number at the end. Adjust the parameter in hardware_launch.py based off the number.</p>
 <div class="fragment"><div class="line">ls /dev/ttyUSB*</div>
 </div><!-- fragment --><p>The computer may not be able to find the shared object files for CTRE Phoenix library. An easy way to fix this is to directly copy them into /usr/lib/.</p>
 <div class="fragment"><div class="line">cd &lt;ros_workspace&gt;/src/Lunabotics-2024/lunabot/autonomous/phoenix_lib/x86-64/</div>
@@ -187,10 +187,10 @@ Structure</h1>
 </ul>
 </li>
 <li><b>launch</b><ul>
-<li><a class="el" href="external__launch_8py.html">external_launch.py</a> (Launches RViz2 and robot state/joint publisher nodes)</li>
-<li><a class="el" href="hardware__launch_8py.html">hardware_launch.py</a> (Launches lidars, cameras, and robot controller)</li>
-<li><a class="el" href="mapping__launch_8py.html">mapping_launch.py</a> (Launches RTAB-Map)</li>
-<li><a class="el" href="navigation__launch_8py.html">navigation_launch.py</a> (Launches Navigation2)</li>
+<li>external_launch.py (Launches RViz2 and robot state/joint publisher nodes)</li>
+<li>hardware_launch.py (Launches lidars, cameras, and robot controller)</li>
+<li>mapping_launch.py (Launches RTAB-Map)</li>
+<li>navigation_launch.py (Launches Navigation2)</li>
 </ul>
 </li>
 <li><b>params</b><ul>

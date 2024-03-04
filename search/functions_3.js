@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['callback_5fcontrol_104',['callback_control',['../class_robot_controller.html#a9602225f59412145d4dad617431d9517',1,'RobotController']]],
-  ['callback_5fvelocity_105',['callback_velocity',['../class_robot_controller.html#a03d15a31c6025dc9b161b99be93e2979',1,'RobotController']]],
-  ['callbackmotors_106',['callbackMotors',['../class_motor_test.html#a621fcb9bec30d546960f9fb36a22b14f',1,'MotorTest']]]
+  ['enable_5fintake_79',['enable_intake',['../class_navigator_client.html#a1c79471a02c139b0f11b6fbb279035e6',1,'NavigatorClient']]],
+  ['enable_5fmanual_5fdrive_80',['enable_manual_drive',['../class_navigator_client.html#a901ca514d60c7908033cf28e7e543b7e',1,'NavigatorClient']]],
+  ['enable_5fouttake_81',['enable_outtake',['../class_navigator_client.html#acd0cd7d14e3c75534f20e5b1d77d2301',1,'NavigatorClient']]]
 ];

@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['perform_58',['perform',['../classmapping__launch_1_1_conditional_text.html#ab078f20cdd197280bf15439d061d71d9',1,'mapping_launch.ConditionalText.perform()'],['../classmapping__launch_1_1_conditional_bool.html#a63f70d4324c43efbc392c420dc336111',1,'mapping_launch.ConditionalBool.perform()']]],
-  ['phoenix_5fno_5fwpi_59',['Phoenix_No_WPI',['../motor__test_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;motor_test.cpp'],['../robot__controller_8cpp.html#a3a3f4cffd13d30cf3e7e1876746169d9',1,'Phoenix_No_WPI():&#160;robot_controller.cpp']]],
-  ['publisher_5f_60',['publisher_',['../class_navigator_client.html#ab487d107044cd3ac0b052072d24da329',1,'NavigatorClient']]]
+  ['readme_2emd_46',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['result_5fcallback_47',['result_callback',['../class_navigator_client.html#a501c0577558ef3fe526f0c0ac34adfbf',1,'NavigatorClient']]],
+  ['right_5fpower_48',['right_power',['../class_robot_controller.html#a589c0d21c17ab8542c4564243cae14b0',1,'RobotController']]],
+  ['right_5fwheel_5fmotor_49',['right_wheel_motor',['../robot__controller_8cpp.html#ab85904552d8a59fb05afec9909a72b82',1,'robot_controller.cpp']]],
+  ['robot_5fcontroller_2ecpp_50',['robot_controller.cpp',['../robot__controller_8cpp.html',1,'']]],
+  ['robot_5fdisabled_51',['robot_disabled',['../class_robot_controller.html#a7fdb1c3ef66a3f45a0b6717af33518be',1,'RobotController']]],
+  ['robotcontroller_52',['RobotController',['../class_robot_controller.html',1,'RobotController'],['../class_robot_controller.html#a1b3379c8c3350b2130f30c8bd23cba33',1,'RobotController::RobotController()']]]
 ];

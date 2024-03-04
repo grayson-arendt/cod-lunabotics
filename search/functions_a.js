@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['navigatorclient_118',['NavigatorClient',['../class_navigator_client.html#a87965cdb79aee64b4d35e750c60a3ce5',1,'NavigatorClient']]]
+  ['send_5fgoal_92',['send_goal',['../class_navigator_client.html#a522176c0b783eec8db87e31a517b4c50',1,'NavigatorClient']]],
+  ['start_5fmechanism_93',['start_mechanism',['../class_robot_controller.html#ab1d71496249a3a9608802725ba55a3ac',1,'RobotController']]]
 ];

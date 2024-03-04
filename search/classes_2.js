@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motortest_83',['MotorTest',['../class_motor_test.html',1,'']]]
+  ['navigatorclient_65',['NavigatorClient',['../class_navigator_client.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['navigatorclient_84',['NavigatorClient',['../class_navigator_client.html',1,'']]]
+  ['robotcontroller_66',['RobotController',['../class_robot_controller.html',1,'']]]
 ];
