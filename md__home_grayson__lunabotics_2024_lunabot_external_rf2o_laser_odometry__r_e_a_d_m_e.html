@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>College of DuPage Lunabotics: Related Pages</title>
+<title>College of DuPage Lunabotics: rf2o_laser_odometry</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,7 +47,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,19 +61,18 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Related Pages</div>  </div>
+<div class="title"><a class="el" href="namespacerf2o__laser__odometry.html">rf2o_laser_odometry</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all related documentation pages:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md__home_grayson__lunabotics_2024_lunabot_external_realsense_ros__r_e_a_d_m_e.html" target="_self">ROS2 Wrapper for Intel&reg; RealSense&trade; Devices</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md__home_grayson__lunabotics_2024_lunabot_external_rf2o_laser_odometry__r_e_a_d_m_e.html" target="_self">rf2o_laser_odometry</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="todo.html" target="_self">Todo List</a></td><td class="desc"></td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="textblock"><p>Estimation of 2D odometry based on planar laser scans. <a class="el" href="namespacerf2o.html">rf2o</a> is a fast and precise method to estimate the planar motion of a lidar from consecutive range scans. Useful for mobile robots with inaccurate wheel odometry.</p>
+<p>For every scanned point we formulate the range flow constraint equation in terms of the sensor velocity, and minimize a robust function of the resulting geometric constraints to obtain the motion estimate. Conversely to traditional approaches, this method does not search for correspondences but performs dense scan alignment based on the scan gradients, in the fashion of dense 3D visual odometry.</p>
+<p>The very low computational cost (0.9 milliseconds on a single CPU core) together whit its high precision, makes RF2O a suitable method for those robotic applications that require planar odometry.</p>
+<p>For a full description of the algorithm, please refer to: <b>Planar Odometry from a Radial Laser Scanner. A Range Flow-based Approach. ICRA 2016</b> Available at: <a href="http://mapir.uma.es/papersrepo/2016/2016_Jaimez_ICRA_RF2O.pdf">http://mapir.uma.es/papersrepo/2016/2016_Jaimez_ICRA_RF2O.pdf</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 </body>
