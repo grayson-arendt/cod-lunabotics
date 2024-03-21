@@ -97,7 +97,7 @@ Dependencies</h1>
 <h1><a class="anchor" id="autotoc_md33"></a>
 Installation</h1>
 <h3><a class="anchor" id="autotoc_md34"></a>
-1. Download the source code for &lt;a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1"&gt;this&lt;/a&gt; release and install.</h3>
+1. Download the source code for https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1 and install.</h3>
 <p><code>Note: this repository contains realsense-ros version 4.51.1 in external directory. This is because support was dropped for the T265 camera in later releases.</code></p>
 <div class="fragment"><div class="line">cd Downloads/</div>
 <div class="line">tar -xzvf librealsense-2.53.1.tar.gz</div>
@@ -123,7 +123,7 @@ Installation</h1>
 <div class="line">sudo apt --fix-broken install</div>
 </div><!-- fragment --><p>The install_dependencies.sh script will also remove librealsense2 and <a class="el" href="namespacerealsense2__camera.html">realsense2_camera</a> packages. I have not been able to find another way around this yet, but RTAB-Map depends on librealsense2 and <a class="el" href="namespacerealsense2__camera.html">realsense2_camera</a> and will cause broken dependencies. However, when the workspace is built, it will choose to use the newest realsense2_ros and not the one in the external directory, which will cause the T265 camera not to work. The current work around is to remove the packages before building the workspace, then fixing the broken dependencies afterwards.</p>
 <h3><a class="anchor" id="autotoc_md37"></a>
-4. Repeat the last two steps (excluding the last line) with the &lt;a href="https://github.com/grayson-arendt/Lunabotics-2024/tree/external-dev?tab=readme-ov-file"&gt;external-dev&lt;/a&gt; branch on the host computer (not robot computer). This branch is for visualizing the robot in RViz2.</h3>
+4. Repeat the last two steps (excluding the last line) with the branch from this link https://github.com/grayson-arendt/Lunabotics-2024/tree/external-dev?tab=readme-ov-file on the host computer (not robot computer). This branch is for visualizing the robot in RViz2.</h3>
 <h1><a class="anchor" id="autotoc_md38"></a>
 Setup Permissions and CTRE Phoenix Library</h1>
 <p>The rplidar_ros package needs to access /dev/ttyUSB0 and /dev/ttyUSB1 (using both lidars). While you can run <code>sudo chmod +x 777 /dev/ttyUSB0</code> for example, it would need to be ran each time on startup. To fix this, run the command below and restart the computer.</p>
