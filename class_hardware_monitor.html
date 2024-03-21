@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Node for monitoring hardware topics to check liveliness.  
+<p>A class for monitoring hardware connections and status.  
  <a href="class_hardware_monitor.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for HardwareMonitor:</div>
@@ -84,8 +84,14 @@ Inheritance diagram for HardwareMonitor:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ade43e5755367d6d258c88d600917aae4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#ade43e5755367d6d258c88d600917aae4">HardwareMonitor</a> ()</td></tr>
-<tr class="memdesc:ade43e5755367d6d258c88d600917aae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_hardware_monitor.html" title="Node for monitoring hardware topics to check liveliness.">HardwareMonitor</a> class.  <a href="class_hardware_monitor.html#ade43e5755367d6d258c88d600917aae4">More...</a><br /></td></tr>
+<tr class="memdesc:ade43e5755367d6d258c88d600917aae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_hardware_monitor.html" title="A class for monitoring hardware connections and status.">HardwareMonitor</a>.  <a href="class_hardware_monitor.html#ade43e5755367d6d258c88d600917aae4">More...</a><br /></td></tr>
 <tr class="separator:ade43e5755367d6d258c88d600917aae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a28febaf3487cb63127ae15f4b1b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#ae7a28febaf3487cb63127ae15f4b1b1c">resetTimer</a> (rclcpp::TimerBase::SharedPtr timer, bool &amp;valid_flag)</td></tr>
+<tr class="memdesc:ae7a28febaf3487cb63127ae15f4b1b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the timer and sets the validity flag to true.  <a href="class_hardware_monitor.html#ae7a28febaf3487cb63127ae15f4b1b1c">More...</a><br /></td></tr>
+<tr class="separator:ae7a28febaf3487cb63127ae15f4b1b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b868a0b82c87c8ab755988c600057cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#a0b868a0b82c87c8ab755988c600057cc">checkConnection</a> (rclcpp::TimerBase::SharedPtr timer, bool &amp;valid_flag, const std::string &amp;sensor_name)</td></tr>
+<tr class="memdesc:a0b868a0b82c87c8ab755988c600057cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the connection status and logs a warning if no connection is detected.  <a href="class_hardware_monitor.html#a0b868a0b82c87c8ab755988c600057cc">More...</a><br /></td></tr>
+<tr class="separator:a0b868a0b82c87c8ab755988c600057cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -105,9 +111,19 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a28b970dedd651ec57ca04de7aafb58f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b97f19e9a9f7295510a4969e5abcdc"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#a50b97f19e9a9f7295510a4969e5abcdc">lidar2_timer_</a></td></tr>
 <tr class="separator:a50b97f19e9a9f7295510a4969e5abcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195e30c9203985c4e5341a6f7dc0af7f"><td class="memItemLeft" align="right" valign="top">rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#a195e30c9203985c4e5341a6f7dc0af7f">all_sensors_timer_</a></td></tr>
+<tr class="separator:a195e30c9203985c4e5341a6f7dc0af7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93d61ae53d92f75fe07cda30457afb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#ae93d61ae53d92f75fe07cda30457afb4">d455_valid</a></td></tr>
+<tr class="separator:ae93d61ae53d92f75fe07cda30457afb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425ff202ec3ce4208e894a8a3bceb347"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#a425ff202ec3ce4208e894a8a3bceb347">t265_valid</a></td></tr>
+<tr class="separator:a425ff202ec3ce4208e894a8a3bceb347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad841593a1fca6a0e9671bd534895e928"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#ad841593a1fca6a0e9671bd534895e928">lidar1_valid</a></td></tr>
+<tr class="separator:ad841593a1fca6a0e9671bd534895e928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f28a181e2bc722591c9ee88edc37019"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hardware_monitor.html#a1f28a181e2bc722591c9ee88edc37019">lidar2_valid</a></td></tr>
+<tr class="separator:a1f28a181e2bc722591c9ee88edc37019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Node for monitoring hardware topics to check liveliness. </p>
+<div class="textblock"><p>A class for monitoring hardware connections and status. </p>
 <dl class="section author"><dt>Author</dt><dd>Grayson Arendt </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ade43e5755367d6d258c88d600917aae4"></a>
@@ -133,11 +149,131 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="class_hardware_monitor.html" title="Node for monitoring hardware topics to check liveliness.">HardwareMonitor</a> class. </p>
+<p>Constructor for <a class="el" href="class_hardware_monitor.html" title="A class for monitoring hardware connections and status.">HardwareMonitor</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0b868a0b82c87c8ab755988c600057cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b868a0b82c87c8ab755988c600057cc">&#9670;&nbsp;</a></span>checkConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareMonitor::checkConnection </td>
+          <td>(</td>
+          <td class="paramtype">rclcpp::TimerBase::SharedPtr&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>valid_flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sensor_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks the connection status and logs a warning if no connection is detected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>The timer associated with the connection. </td></tr>
+    <tr><td class="paramname">valid_flag</td><td>The validity flag indicating the connection status. </td></tr>
+    <tr><td class="paramname">sensor_name</td><td>The name of the sensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7a28febaf3487cb63127ae15f4b1b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a28febaf3487cb63127ae15f4b1b1c">&#9670;&nbsp;</a></span>resetTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareMonitor::resetTimer </td>
+          <td>(</td>
+          <td class="paramtype">rclcpp::TimerBase::SharedPtr&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>valid_flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the timer and sets the validity flag to true. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>The timer to reset. </td></tr>
+    <tr><td class="paramname">valid_flag</td><td>The validity flag to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a195e30c9203985c4e5341a6f7dc0af7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195e30c9203985c4e5341a6f7dc0af7f">&#9670;&nbsp;</a></span>all_sensors_timer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::TimerBase::SharedPtr HardwareMonitor::all_sensors_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acb042cea2481f373a52ff479c8facda3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb042cea2481f373a52ff479c8facda3">&#9670;&nbsp;</a></span>d455_subscriber_</h2>
 
@@ -171,6 +307,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">rclcpp::TimerBase::SharedPtr HardwareMonitor::d455_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93d61ae53d92f75fe07cda30457afb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93d61ae53d92f75fe07cda30457afb4">&#9670;&nbsp;</a></span>d455_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareMonitor::d455_valid</td>
         </tr>
       </table>
   </td>
@@ -226,6 +384,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad841593a1fca6a0e9671bd534895e928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad841593a1fca6a0e9671bd534895e928">&#9670;&nbsp;</a></span>lidar1_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareMonitor::lidar1_valid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a315c5f3ba7ed8caf72903f3443a0df54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a315c5f3ba7ed8caf72903f3443a0df54">&#9670;&nbsp;</a></span>lidar2_subscriber_</h2>
 
@@ -259,6 +439,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">rclcpp::TimerBase::SharedPtr HardwareMonitor::lidar2_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f28a181e2bc722591c9ee88edc37019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f28a181e2bc722591c9ee88edc37019">&#9670;&nbsp;</a></span>lidar2_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareMonitor::lidar2_valid</td>
         </tr>
       </table>
   </td>
@@ -314,8 +516,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a425ff202ec3ce4208e894a8a3bceb347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425ff202ec3ce4208e894a8a3bceb347">&#9670;&nbsp;</a></span>t265_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareMonitor::t265_valid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/src/<a class="el" href="hardware__monitor_8cpp.html">hardware_monitor.cpp</a></li>
+<li>/home/grayson/Lunabotics-2024/lunabot_autonomous/src/<a class="el" href="hardware__monitor_8cpp.html">hardware_monitor.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trencher_5fmotor_94',['trencher_motor',['../robot__controller_8cpp.html#a545fb120325b4c2e5882059dcf9061fb',1,'robot_controller.cpp']]]
+  ['kill_5frealsense2_5fcamera_5fnode_1067',['kill_realsense2_camera_node',['../namespacers2__test.html#a0f82053d596eacd9ee48887602bdd35a',1,'rs2_test']]]
 ];

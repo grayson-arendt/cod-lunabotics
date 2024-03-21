@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['publisher_5f_116',['publisher_',['../class_navigator_client.html#ab487d107044cd3ac0b052072d24da329',1,'NavigatorClient']]]
+  ['joystick_5fsubscriber_5f_1445',['joystick_subscriber_',['../class_robot_controller.html#a4d84b0fce315a868c416170bb0e320b2',1,'RobotController']]]
 ];

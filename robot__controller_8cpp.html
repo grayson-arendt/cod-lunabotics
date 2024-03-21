@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>College of DuPage Lunabotics: /home/grayson/Lunabotics-2024/lunabot/autonomous/src/robot_controller.cpp File Reference</title>
+<title>College of DuPage Lunabotics: /home/grayson/Lunabotics-2024/lunabot_autonomous/src/robot_controller.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf9e983d8d166197a63260d6c9dce1ea.html">Lunabotics-2024</a></li><li class="navelem"><a class="el" href="dir_a1bbbb3cb1e9e23a333422cb02546583.html">lunabot</a></li><li class="navelem"><a class="el" href="dir_07873914402306937f31af229b4254cd.html">autonomous</a></li><li class="navelem"><a class="el" href="dir_3acdcf7ff980f93b3b6692091e506b5d.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bf9e983d8d166197a63260d6c9dce1ea.html">Lunabotics-2024</a></li><li class="navelem"><a class="el" href="dir_b214f4d2f44e16d320031b99f6b771df.html">lunabot_autonomous</a></li><li class="navelem"><a class="el" href="dir_d91a8076370e83bcce3aa0cf0bc1d41b.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,10 +75,10 @@ $(function() {
 <div class="title">robot_controller.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
-<code>#include &quot;sensor_msgs/msg/joy.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;lunabot_autonomous/msg/control.hpp&quot;</code><br />
 <code>#include &quot;geometry_msgs/msg/twist.hpp&quot;</code><br />
-<code>#include &quot;autonomous/msg/control.hpp&quot;</code><br />
+<code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
+<code>#include &quot;sensor_msgs/msg/joy.hpp&quot;</code><br />
 <code>#include &quot;ctre/Phoenix.h&quot;</code><br />
 <code>#include &quot;ctre/phoenix/cci/Unmanaged_CCI.h&quot;</code><br />
 <code>#include &quot;ctre/phoenix/platform/Platform.hpp&quot;</code><br />
@@ -87,7 +87,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html">RobotController</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node for controlling robot. Has both autonomous and manual control.  <a href="class_robot_controller.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomous commands.  <a href="class_robot_controller.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -97,16 +97,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afb1fc34d1093137b4ef279f542684715"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#afb1fc34d1093137b4ef279f542684715">left_wheel_motor</a> (1)</td></tr>
-<tr class="separator:afb1fc34d1093137b4ef279f542684715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85904552d8a59fb05afec9909a72b82"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#ab85904552d8a59fb05afec9909a72b82">right_wheel_motor</a> (2)</td></tr>
-<tr class="separator:ab85904552d8a59fb05afec9909a72b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a545fb120325b4c2e5882059dcf9061fb"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#a545fb120325b4c2e5882059dcf9061fb">trencher_motor</a> (3)</td></tr>
-<tr class="separator:a545fb120325b4c2e5882059dcf9061fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb5a225d34b91cd683515948902760a"><td class="memItemLeft" align="right" valign="top">TalonSRX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#a7fb5a225d34b91cd683515948902760a">actuator_motor</a> (4)</td></tr>
-<tr class="separator:a7fb5a225d34b91cd683515948902760a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae34b053d026f3105dfa5458f556fe6"><td class="memItemLeft" align="right" valign="top">TalonSRX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#adae34b053d026f3105dfa5458f556fe6">bucket_motor</a> (5)</td></tr>
-<tr class="separator:adae34b053d026f3105dfa5458f556fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robot__controller_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="robot__controller_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,60 +117,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7fb5a225d34b91cd683515948902760a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fb5a225d34b91cd683515948902760a">&#9670;&nbsp;</a></span>actuator_motor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TalonSRX actuator_motor </td>
-          <td>(</td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adae34b053d026f3105dfa5458f556fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adae34b053d026f3105dfa5458f556fe6">&#9670;&nbsp;</a></span>bucket_motor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TalonSRX bucket_motor </td>
-          <td>(</td>
-          <td class="paramtype">5&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb1fc34d1093137b4ef279f542684715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb1fc34d1093137b4ef279f542684715">&#9670;&nbsp;</a></span>left_wheel_motor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TalonFX left_wheel_motor </td>
-          <td>(</td>
-          <td class="paramtype">1&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -208,43 +144,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<p>Initializes and spins the <a class="el" href="class_robot_controller.html" title="Node for controlling robot. Has both autonomous and manual control.">RobotController</a> node. </p>
-
-</div>
-</div>
-<a id="ab85904552d8a59fb05afec9909a72b82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab85904552d8a59fb05afec9909a72b82">&#9670;&nbsp;</a></span>right_wheel_motor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TalonFX right_wheel_motor </td>
-          <td>(</td>
-          <td class="paramtype">2&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a545fb120325b4c2e5882059dcf9061fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a545fb120325b4c2e5882059dcf9061fb">&#9670;&nbsp;</a></span>trencher_motor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TalonFX trencher_motor </td>
-          <td>(</td>
-          <td class="paramtype">3&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Initializes and spins the <a class="el" href="class_robot_controller.html" title="A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomo...">RobotController</a> node. </p>
 
 </div>
 </div>

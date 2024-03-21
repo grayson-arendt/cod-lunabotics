@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Node for controlling robot. Has both autonomous and manual control.  
+<p>A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomous commands.  
  <a href="class_robot_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for RobotController:</div>
@@ -85,64 +85,111 @@ Inheritance diagram for RobotController:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b3379c8c3350b2130f30c8bd23cba33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a1b3379c8c3350b2130f30c8bd23cba33">RobotController</a> ()</td></tr>
-<tr class="memdesc:a1b3379c8c3350b2130f30c8bd23cba33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_robot_controller.html" title="Node for controlling robot. Has both autonomous and manual control.">RobotController</a> class.  <a href="class_robot_controller.html#a1b3379c8c3350b2130f30c8bd23cba33">More...</a><br /></td></tr>
+<tr class="memdesc:a1b3379c8c3350b2130f30c8bd23cba33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_robot_controller.html" title="A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomo...">RobotController</a>.  <a href="class_robot_controller.html#a1b3379c8c3350b2130f30c8bd23cba33">More...</a><br /></td></tr>
 <tr class="separator:a1b3379c8c3350b2130f30c8bd23cba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a7c8e4ed087766e2fe880b9d1bd4be41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a7c8e4ed087766e2fe880b9d1bd4be41a">declare_and_get_parameters</a> ()</td></tr>
+<tr class="memdesc:a7c8e4ed087766e2fe880b9d1bd4be41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares and gets parameters from the parameter server.  <a href="class_robot_controller.html#a7c8e4ed087766e2fe880b9d1bd4be41a">More...</a><br /></td></tr>
+<tr class="separator:a7c8e4ed087766e2fe880b9d1bd4be41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8cc7c9b4a1096ada9ddf067b489360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a4f8cc7c9b4a1096ada9ddf067b489360">apply_controller_mode</a> ()</td></tr>
+<tr class="memdesc:a4f8cc7c9b4a1096ada9ddf067b489360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the selected controller mode.  <a href="class_robot_controller.html#a4f8cc7c9b4a1096ada9ddf067b489360">More...</a><br /></td></tr>
+<tr class="separator:a4f8cc7c9b4a1096ada9ddf067b489360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d8b66245c5f8ef1df7bba8f6158e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ae4d8b66245c5f8ef1df7bba8f6158e21">joy_callback</a> (const sensor_msgs::msg::Joy::SharedPtr joy_msg)</td></tr>
-<tr class="memdesc:ae4d8b66245c5f8ef1df7bba8f6158e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing controller input and manually controlling robot.  <a href="class_robot_controller.html#ae4d8b66245c5f8ef1df7bba8f6158e21">More...</a><br /></td></tr>
+<tr class="memdesc:ae4d8b66245c5f8ef1df7bba8f6158e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing joystick messages.  <a href="class_robot_controller.html#ae4d8b66245c5f8ef1df7bba8f6158e21">More...</a><br /></td></tr>
 <tr class="separator:ae4d8b66245c5f8ef1df7bba8f6158e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d15a31c6025dc9b161b99be93e2979"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a03d15a31c6025dc9b161b99be93e2979">callback_velocity</a> (const geometry_msgs::msg::Twist::SharedPtr velocity_msg)</td></tr>
-<tr class="memdesc:a03d15a31c6025dc9b161b99be93e2979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing velocity commands.  <a href="class_robot_controller.html#a03d15a31c6025dc9b161b99be93e2979">More...</a><br /></td></tr>
+<tr class="memdesc:a03d15a31c6025dc9b161b99be93e2979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing velocity messages.  <a href="class_robot_controller.html#a03d15a31c6025dc9b161b99be93e2979">More...</a><br /></td></tr>
 <tr class="separator:a03d15a31c6025dc9b161b99be93e2979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9602225f59412145d4dad617431d9517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a9602225f59412145d4dad617431d9517">callback_control</a> (const autonomous::msg::Control::SharedPtr control_msg)</td></tr>
-<tr class="memdesc:a9602225f59412145d4dad617431d9517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for activating digging or depositing mechanisms based off of /control topic.  <a href="class_robot_controller.html#a9602225f59412145d4dad617431d9517">More...</a><br /></td></tr>
-<tr class="separator:a9602225f59412145d4dad617431d9517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2002d669502bf556a54092d5ef8c56b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a2002d669502bf556a54092d5ef8c56b5">callback_control</a> (const lunabot_autonomous::msg::Control::SharedPtr control_msg)</td></tr>
+<tr class="memdesc:a2002d669502bf556a54092d5ef8c56b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing lunabot_autonomous control messages.  <a href="class_robot_controller.html#a2002d669502bf556a54092d5ef8c56b5">More...</a><br /></td></tr>
+<tr class="separator:a2002d669502bf556a54092d5ef8c56b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1d71496249a3a9608802725ba55a3ac"><td class="memTemplParams" colspan="2">template&lt;typename MotorType &gt; </td></tr>
 <tr class="memitem:ab1d71496249a3a9608802725ba55a3ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ab1d71496249a3a9608802725ba55a3ac">start_mechanism</a> (const std::string &amp;name, MotorType &amp;<a class="el" href="motor__test_8cpp.html#a509d49b10dbb54a151f0f90d6abdcd6b">motor</a>, double percent_output=0.5)</td></tr>
-<tr class="memdesc:ab1d71496249a3a9608802725ba55a3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for starting mechanisms.  <a href="class_robot_controller.html#ab1d71496249a3a9608802725ba55a3ac">More...</a><br /></td></tr>
+<tr class="memdesc:ab1d71496249a3a9608802725ba55a3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a mechanism with specified parameters.  <a href="class_robot_controller.html#ab1d71496249a3a9608802725ba55a3ac">More...</a><br /></td></tr>
 <tr class="separator:ab1d71496249a3a9608802725ba55a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a09da298cb91cd102d6092dd5b855cc30"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a09da298cb91cd102d6092dd5b855cc30">velocity_left_cmd</a></td></tr>
-<tr class="separator:a09da298cb91cd102d6092dd5b855cc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef3be6b145e76541b50b11849650d2e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a9ef3be6b145e76541b50b11849650d2e">velocity_right_cmd</a></td></tr>
-<tr class="separator:a9ef3be6b145e76541b50b11849650d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeb5fbe12e61b6d802dea53f4f67d923"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#afeb5fbe12e61b6d802dea53f4f67d923">left_power</a></td></tr>
-<tr class="separator:afeb5fbe12e61b6d802dea53f4f67d923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589c0d21c17ab8542c4564243cae14b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a589c0d21c17ab8542c4564243cae14b0">right_power</a></td></tr>
-<tr class="separator:a589c0d21c17ab8542c4564243cae14b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881ab493a25bdd21df5a361c7ac9cd18"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a881ab493a25bdd21df5a361c7ac9cd18">actuator_power</a></td></tr>
-<tr class="separator:a881ab493a25bdd21df5a361c7ac9cd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53df0b92ee13270ad51c02b23536a65"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ae53df0b92ee13270ad51c02b23536a65">trencher_power</a></td></tr>
-<tr class="separator:ae53df0b92ee13270ad51c02b23536a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215729f1f986d0e9a497630a18a351f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a215729f1f986d0e9a497630a18a351f1">bucket_power</a></td></tr>
-<tr class="separator:a215729f1f986d0e9a497630a18a351f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a5ee7cba5118d0394ab2d7dcddafcf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#af0a5ee7cba5118d0394ab2d7dcddafcf">actuator_direction</a></td></tr>
-<tr class="separator:af0a5ee7cba5118d0394ab2d7dcddafcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40fa689945f4c41bd3ab90b7746fa8bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a40fa689945f4c41bd3ab90b7746fa8bc">intake_direction</a></td></tr>
-<tr class="separator:a40fa689945f4c41bd3ab90b7746fa8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0852dc0004384e168b15a96646b5a86e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a0852dc0004384e168b15a96646b5a86e">manual_enabled</a></td></tr>
-<tr class="separator:a0852dc0004384e168b15a96646b5a86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345719e748c0fd948c9106ba7ffbd966"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a345719e748c0fd948c9106ba7ffbd966">autonomous_disabled</a></td></tr>
-<tr class="separator:a345719e748c0fd948c9106ba7ffbd966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fdb1c3ef66a3f45a0b6717af33518be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a7fdb1c3ef66a3f45a0b6717af33518be">robot_disabled</a></td></tr>
-<tr class="separator:a7fdb1c3ef66a3f45a0b6717af33518be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e4f0215ec7d37a875535dc17336c51"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a12e4f0215ec7d37a875535dc17336c51">velocity_subscriber_</a></td></tr>
 <tr class="separator:a12e4f0215ec7d37a875535dc17336c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df4013c4910f5f05d24afec3610c0cc"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; autonomous::msg::Control &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a3df4013c4910f5f05d24afec3610c0cc">control_subscriber_</a></td></tr>
-<tr class="separator:a3df4013c4910f5f05d24afec3610c0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7d3583f5416f2d88e019761d0b34e6"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; lunabot_autonomous::msg::Control &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a3e7d3583f5416f2d88e019761d0b34e6">control_subscriber_</a></td></tr>
+<tr class="separator:a3e7d3583f5416f2d88e019761d0b34e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d84b0fce315a868c416170bb0e320b2"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::Joy &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a4d84b0fce315a868c416170bb0e320b2">joystick_subscriber_</a></td></tr>
 <tr class="separator:a4d84b0fce315a868c416170bb0e320b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32707818b8525b324ce8c77667cdfb0d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a32707818b8525b324ce8c77667cdfb0d">velocity_left_cmd_</a></td></tr>
+<tr class="separator:a32707818b8525b324ce8c77667cdfb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd75733390afdb8eacd1236a9abc11d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a8bd75733390afdb8eacd1236a9abc11d">velocity_right_cmd_</a></td></tr>
+<tr class="separator:a8bd75733390afdb8eacd1236a9abc11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dffd0f25a718e69c9095af7f168ce92"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a6dffd0f25a718e69c9095af7f168ce92">left_power_</a></td></tr>
+<tr class="separator:a6dffd0f25a718e69c9095af7f168ce92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b22b7d28ca27f50b5359a2ddf62cd7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a72b22b7d28ca27f50b5359a2ddf62cd7">right_power_</a></td></tr>
+<tr class="separator:a72b22b7d28ca27f50b5359a2ddf62cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebddf7eda5d0563dfb021b68a540ec2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#aeebddf7eda5d0563dfb021b68a540ec2">actuator_power_</a></td></tr>
+<tr class="separator:aeebddf7eda5d0563dfb021b68a540ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2cddee8179562034280aab73d54068"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a6d2cddee8179562034280aab73d54068">trencher_power_</a></td></tr>
+<tr class="separator:a6d2cddee8179562034280aab73d54068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d17f0f801c16078799b35866dcd6c7b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a8d17f0f801c16078799b35866dcd6c7b">bucket_power_</a></td></tr>
+<tr class="separator:a8d17f0f801c16078799b35866dcd6c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb456a20039d9b520682e4b334356bf8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#afb456a20039d9b520682e4b334356bf8">left_trigger_</a></td></tr>
+<tr class="separator:afb456a20039d9b520682e4b334356bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d20f67dc194db618e63623a9578a346"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a0d20f67dc194db618e63623a9578a346">right_trigger_</a></td></tr>
+<tr class="separator:a0d20f67dc194db618e63623a9578a346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee95d503d0e2142890ce4b1471b22cdc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#aee95d503d0e2142890ce4b1471b22cdc">d_pad_vertical_</a></td></tr>
+<tr class="separator:aee95d503d0e2142890ce4b1471b22cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1532d2678b77b09b00fd6eb788085da3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a1532d2678b77b09b00fd6eb788085da3">d_pad_horizontal_</a></td></tr>
+<tr class="separator:a1532d2678b77b09b00fd6eb788085da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc0089b82fb85822dd355d7efedbddb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#aafc0089b82fb85822dd355d7efedbddb">left_joystick_x_</a></td></tr>
+<tr class="separator:aafc0089b82fb85822dd355d7efedbddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4665f89feba6a9a09a860d9ad00b358"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ad4665f89feba6a9a09a860d9ad00b358">left_joystick_y_</a></td></tr>
+<tr class="separator:ad4665f89feba6a9a09a860d9ad00b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa86ecfd0fe946391400492c647b010"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a3aa86ecfd0fe946391400492c647b010">turn_</a></td></tr>
+<tr class="separator:a3aa86ecfd0fe946391400492c647b010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208729713019d6744a8ca5eb98dbc35a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a208729713019d6744a8ca5eb98dbc35a">drive_</a></td></tr>
+<tr class="separator:a208729713019d6744a8ca5eb98dbc35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a69364ea6d2d1c01159476a81bcdf71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a9a69364ea6d2d1c01159476a81bcdf71">drive_forward_</a></td></tr>
+<tr class="separator:a9a69364ea6d2d1c01159476a81bcdf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82076e7e3922f46ec4afb21442175eb1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a82076e7e3922f46ec4afb21442175eb1">drive_backward_</a></td></tr>
+<tr class="separator:a82076e7e3922f46ec4afb21442175eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f1368572f2ef0c780e250585f94804"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a91f1368572f2ef0c780e250585f94804">speed_multiplier_</a></td></tr>
+<tr class="separator:a91f1368572f2ef0c780e250585f94804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e86e82d3b395ee13a11e1de6a6be61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a66e86e82d3b395ee13a11e1de6a6be61">manual_enabled_</a></td></tr>
+<tr class="separator:a66e86e82d3b395ee13a11e1de6a6be61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea933ebaa69ab523fcf17d51062ac2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a1ea933ebaa69ab523fcf17d51062ac2c">robot_disabled_</a></td></tr>
+<tr class="separator:a1ea933ebaa69ab523fcf17d51062ac2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b69af9a0f21a89693e97107109c77c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a93b69af9a0f21a89693e97107109c77c">xbox_mode_</a></td></tr>
+<tr class="separator:a93b69af9a0f21a89693e97107109c77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90988a1f9fb39f193b796a19ca60ef0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a90988a1f9fb39f193b796a19ca60ef0e">ps4_mode_</a></td></tr>
+<tr class="separator:a90988a1f9fb39f193b796a19ca60ef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab460819d7af0649317618b68a9b9b8ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ab460819d7af0649317618b68a9b9b8ed">switch_mode_</a></td></tr>
+<tr class="separator:ab460819d7af0649317618b68a9b9b8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58baa1bfdea20b2168e9364bb778927d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a58baa1bfdea20b2168e9364bb778927d">outdoor_mode_</a></td></tr>
+<tr class="separator:a58baa1bfdea20b2168e9364bb778927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7b02ba0568f3f52d4b5a39d6782f0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a8b7b02ba0568f3f52d4b5a39d6782f0b">home_button_</a></td></tr>
+<tr class="separator:a8b7b02ba0568f3f52d4b5a39d6782f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ce20c66b47b6052e609cc7d48a1fb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a33ce20c66b47b6052e609cc7d48a1fb0">share_button_</a></td></tr>
+<tr class="separator:a33ce20c66b47b6052e609cc7d48a1fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcd7967dfe82f390e750e388afbfb51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a3fcd7967dfe82f390e750e388afbfb51">menu_button_</a></td></tr>
+<tr class="separator:a3fcd7967dfe82f390e750e388afbfb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f1617c28c9e119344980eee5b6ab45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ac9f1617c28c9e119344980eee5b6ab45">b_button_</a></td></tr>
+<tr class="separator:ac9f1617c28c9e119344980eee5b6ab45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac484d95781eb0bf15f98241e4afc6199"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ac484d95781eb0bf15f98241e4afc6199">left_wheel_motor_</a> {1}</td></tr>
+<tr class="separator:ac484d95781eb0bf15f98241e4afc6199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb8b1ec0f494aeb72fb51b45fbbe1f9"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a1fb8b1ec0f494aeb72fb51b45fbbe1f9">right_wheel_motor_</a> {2}</td></tr>
+<tr class="separator:a1fb8b1ec0f494aeb72fb51b45fbbe1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d44608252c4a53126996ca050014c5"><td class="memItemLeft" align="right" valign="top">TalonFX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#ac8d44608252c4a53126996ca050014c5">trencher_motor_</a> {3}</td></tr>
+<tr class="separator:ac8d44608252c4a53126996ca050014c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a0d49cd390bb430331d88cbd3c570d"><td class="memItemLeft" align="right" valign="top">TalonSRX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#aa9a0d49cd390bb430331d88cbd3c570d">bucket_motor_</a> {4}</td></tr>
+<tr class="separator:aa9a0d49cd390bb430331d88cbd3c570d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2f3dca933887e7b85c1bcedc04f02e"><td class="memItemLeft" align="right" valign="top">TalonSRX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#aed2f3dca933887e7b85c1bcedc04f02e">actuator_left_motor_</a> {5}</td></tr>
+<tr class="separator:aed2f3dca933887e7b85c1bcedc04f02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f8fb39b90f2d7605d0d1a7a13df051"><td class="memItemLeft" align="right" valign="top">TalonSRX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_controller.html#a16f8fb39b90f2d7605d0d1a7a13df051">actuator_right_motor_</a> {6}</td></tr>
+<tr class="separator:a16f8fb39b90f2d7605d0d1a7a13df051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Node for controlling robot. Has both autonomous and manual control. </p>
-<p>View button -&gt; Disables autonomous control and enables manual control Menu button -&gt; Disables manual control and enables autonomous control Home button -&gt; Disables all motors in manual control</p>
-<p>Button layout for manual control:</p>
-<p>Left trigger -&gt; Backwards speed Right trigger -&gt; Forwards speed B button -&gt; Turbo mode D-pad up -&gt; Linear actuator up D-pad down -&gt; Linear actuator down D-pad right -&gt; Trencher intake D-pad left -&gt; Bucket outtake</p>
-<dl class="section author"><dt>Author</dt><dd>Grayson Arendt </dd></dl>
+<div class="textblock"><p>A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomous commands. </p>
+<p>The Nintendo Switch controller triggers act as buttons instead of providing variable input, so the mode will drive the robot based off of the left joystick instead. </p><dl class="section author"><dt>Author</dt><dd>Grayson Arendt </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1b3379c8c3350b2130f30c8bd23cba33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b3379c8c3350b2130f30c8bd23cba33">&#9670;&nbsp;</a></span>RobotController()</h2>
@@ -167,13 +214,40 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="class_robot_controller.html" title="Node for controlling robot. Has both autonomous and manual control.">RobotController</a> class. </p>
+<p>Constructor for <a class="el" href="class_robot_controller.html" title="A class for controlling the robot using a controller (XBox One, PS4, or Nintendo Switch) and autonomo...">RobotController</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9602225f59412145d4dad617431d9517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9602225f59412145d4dad617431d9517">&#9670;&nbsp;</a></span>callback_control()</h2>
+<a id="a4f8cc7c9b4a1096ada9ddf067b489360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8cc7c9b4a1096ada9ddf067b489360">&#9670;&nbsp;</a></span>apply_controller_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotController::apply_controller_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the selected controller mode. </p>
+
+</div>
+</div>
+<a id="a2002d669502bf556a54092d5ef8c56b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2002d669502bf556a54092d5ef8c56b5">&#9670;&nbsp;</a></span>callback_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +258,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void RobotController::callback_control </td>
           <td>(</td>
-          <td class="paramtype">const autonomous::msg::Control::SharedPtr&#160;</td>
+          <td class="paramtype">const lunabot_autonomous::msg::Control::SharedPtr&#160;</td>
           <td class="paramname"><em>control_msg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -196,10 +270,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback function for activating digging or depositing mechanisms based off of /control topic. </p>
+<p>Callback function for processing lunabot_autonomous control messages. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">control_msg</td><td>The received Control message containing booleans to enable specific mechanisms. </td></tr>
+    <tr><td class="paramname">control_msg</td><td>The lunabot_autonomous control message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,13 +304,40 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback function for processing velocity commands. </p>
+<p>Callback function for processing velocity messages. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">velocity_msg</td><td>The received Twist message containing velocity. </td></tr>
+    <tr><td class="paramname">velocity_msg</td><td>The velocity message. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7c8e4ed087766e2fe880b9d1bd4be41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8e4ed087766e2fe880b9d1bd4be41a">&#9670;&nbsp;</a></span>declare_and_get_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotController::declare_and_get_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declares and gets parameters from the parameter server. </p>
 
 </div>
 </div>
@@ -264,10 +365,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Callback function for processing controller input and manually controlling robot. </p>
+<p>Callback function for processing joystick messages. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">joy_msg</td><td>The received Joy message containing controller input. </td></tr>
+    <tr><td class="paramname">joy_msg</td><td>The joystick message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,12 +417,18 @@ template&lt;typename MotorType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Callback function for starting mechanisms. </p>
+<p>Starts a mechanism with specified parameters. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MotorType</td><td>The type of motor. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of mechanism. </td></tr>
-    <tr><td class="paramname">motor</td><td>The motor object associated with the mechanism. </td></tr>
-    <tr><td class="paramname">percent_output</td><td>The percent output speed of the mechanism. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the mechanism. </td></tr>
+    <tr><td class="paramname">motor</td><td>The motor to control the mechanism. </td></tr>
+    <tr><td class="paramname">percent_output</td><td>The percentage output for the motor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,8 +436,8 @@ template&lt;typename MotorType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af0a5ee7cba5118d0394ab2d7dcddafcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0a5ee7cba5118d0394ab2d7dcddafcf">&#9670;&nbsp;</a></span>actuator_direction</h2>
+<a id="aed2f3dca933887e7b85c1bcedc04f02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2f3dca933887e7b85c1bcedc04f02e">&#9670;&nbsp;</a></span>actuator_left_motor_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +446,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::actuator_direction</td>
+          <td class="memname">TalonSRX RobotController::actuator_left_motor_ {5}</td>
         </tr>
       </table>
   </td>
@@ -351,8 +458,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a881ab493a25bdd21df5a361c7ac9cd18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a881ab493a25bdd21df5a361c7ac9cd18">&#9670;&nbsp;</a></span>actuator_power</h2>
+<a id="aeebddf7eda5d0563dfb021b68a540ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebddf7eda5d0563dfb021b68a540ec2">&#9670;&nbsp;</a></span>actuator_power_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +468,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::actuator_power</td>
+          <td class="memname">double RobotController::actuator_power_</td>
         </tr>
       </table>
   </td>
@@ -373,8 +480,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a345719e748c0fd948c9106ba7ffbd966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a345719e748c0fd948c9106ba7ffbd966">&#9670;&nbsp;</a></span>autonomous_disabled</h2>
+<a id="a16f8fb39b90f2d7605d0d1a7a13df051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f8fb39b90f2d7605d0d1a7a13df051">&#9670;&nbsp;</a></span>actuator_right_motor_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,7 +490,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool RobotController::autonomous_disabled</td>
+          <td class="memname">TalonSRX RobotController::actuator_right_motor_ {6}</td>
         </tr>
       </table>
   </td>
@@ -395,8 +502,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a215729f1f986d0e9a497630a18a351f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a215729f1f986d0e9a497630a18a351f1">&#9670;&nbsp;</a></span>bucket_power</h2>
+<a id="ac9f1617c28c9e119344980eee5b6ab45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f1617c28c9e119344980eee5b6ab45">&#9670;&nbsp;</a></span>b_button_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +512,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::bucket_power</td>
+          <td class="memname">bool RobotController::b_button_</td>
         </tr>
       </table>
   </td>
@@ -417,8 +524,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a3df4013c4910f5f05d24afec3610c0cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3df4013c4910f5f05d24afec3610c0cc">&#9670;&nbsp;</a></span>control_subscriber_</h2>
+<a id="aa9a0d49cd390bb430331d88cbd3c570d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a0d49cd390bb430331d88cbd3c570d">&#9670;&nbsp;</a></span>bucket_motor_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +534,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rclcpp::Subscription&lt;autonomous::msg::Control&gt;::SharedPtr RobotController::control_subscriber_</td>
+          <td class="memname">TalonSRX RobotController::bucket_motor_ {4}</td>
         </tr>
       </table>
   </td>
@@ -439,8 +546,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a40fa689945f4c41bd3ab90b7746fa8bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40fa689945f4c41bd3ab90b7746fa8bc">&#9670;&nbsp;</a></span>intake_direction</h2>
+<a id="a8d17f0f801c16078799b35866dcd6c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d17f0f801c16078799b35866dcd6c7b">&#9670;&nbsp;</a></span>bucket_power_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +556,161 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::intake_direction</td>
+          <td class="memname">double RobotController::bucket_power_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e7d3583f5416f2d88e019761d0b34e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7d3583f5416f2d88e019761d0b34e6">&#9670;&nbsp;</a></span>control_subscriber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;lunabot_autonomous::msg::Control&gt;::SharedPtr RobotController::control_subscriber_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1532d2678b77b09b00fd6eb788085da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1532d2678b77b09b00fd6eb788085da3">&#9670;&nbsp;</a></span>d_pad_horizontal_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::d_pad_horizontal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee95d503d0e2142890ce4b1471b22cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee95d503d0e2142890ce4b1471b22cdc">&#9670;&nbsp;</a></span>d_pad_vertical_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::d_pad_vertical_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a208729713019d6744a8ca5eb98dbc35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208729713019d6744a8ca5eb98dbc35a">&#9670;&nbsp;</a></span>drive_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::drive_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82076e7e3922f46ec4afb21442175eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82076e7e3922f46ec4afb21442175eb1">&#9670;&nbsp;</a></span>drive_backward_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::drive_backward_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a69364ea6d2d1c01159476a81bcdf71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a69364ea6d2d1c01159476a81bcdf71">&#9670;&nbsp;</a></span>drive_forward_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::drive_forward_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b7b02ba0568f3f52d4b5a39d6782f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7b02ba0568f3f52d4b5a39d6782f0b">&#9670;&nbsp;</a></span>home_button_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::home_button_</td>
         </tr>
       </table>
   </td>
@@ -483,8 +744,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="afeb5fbe12e61b6d802dea53f4f67d923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeb5fbe12e61b6d802dea53f4f67d923">&#9670;&nbsp;</a></span>left_power</h2>
+<a id="aafc0089b82fb85822dd355d7efedbddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc0089b82fb85822dd355d7efedbddb">&#9670;&nbsp;</a></span>left_joystick_x_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,7 +754,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::left_power</td>
+          <td class="memname">double RobotController::left_joystick_x_</td>
         </tr>
       </table>
   </td>
@@ -505,8 +766,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a0852dc0004384e168b15a96646b5a86e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0852dc0004384e168b15a96646b5a86e">&#9670;&nbsp;</a></span>manual_enabled</h2>
+<a id="ad4665f89feba6a9a09a860d9ad00b358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4665f89feba6a9a09a860d9ad00b358">&#9670;&nbsp;</a></span>left_joystick_y_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,7 +776,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool RobotController::manual_enabled</td>
+          <td class="memname">double RobotController::left_joystick_y_</td>
         </tr>
       </table>
   </td>
@@ -527,8 +788,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a589c0d21c17ab8542c4564243cae14b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589c0d21c17ab8542c4564243cae14b0">&#9670;&nbsp;</a></span>right_power</h2>
+<a id="a6dffd0f25a718e69c9095af7f168ce92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dffd0f25a718e69c9095af7f168ce92">&#9670;&nbsp;</a></span>left_power_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +798,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::right_power</td>
+          <td class="memname">double RobotController::left_power_</td>
         </tr>
       </table>
   </td>
@@ -549,8 +810,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a7fdb1c3ef66a3f45a0b6717af33518be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fdb1c3ef66a3f45a0b6717af33518be">&#9670;&nbsp;</a></span>robot_disabled</h2>
+<a id="afb456a20039d9b520682e4b334356bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb456a20039d9b520682e4b334356bf8">&#9670;&nbsp;</a></span>left_trigger_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +820,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool RobotController::robot_disabled</td>
+          <td class="memname">double RobotController::left_trigger_</td>
         </tr>
       </table>
   </td>
@@ -571,8 +832,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="ae53df0b92ee13270ad51c02b23536a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53df0b92ee13270ad51c02b23536a65">&#9670;&nbsp;</a></span>trencher_power</h2>
+<a id="ac484d95781eb0bf15f98241e4afc6199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac484d95781eb0bf15f98241e4afc6199">&#9670;&nbsp;</a></span>left_wheel_motor_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,7 +842,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::trencher_power</td>
+          <td class="memname">TalonFX RobotController::left_wheel_motor_ {1}</td>
         </tr>
       </table>
   </td>
@@ -593,8 +854,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a09da298cb91cd102d6092dd5b855cc30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09da298cb91cd102d6092dd5b855cc30">&#9670;&nbsp;</a></span>velocity_left_cmd</h2>
+<a id="a66e86e82d3b395ee13a11e1de6a6be61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e86e82d3b395ee13a11e1de6a6be61">&#9670;&nbsp;</a></span>manual_enabled_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +864,7 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::velocity_left_cmd</td>
+          <td class="memname">bool RobotController::manual_enabled_</td>
         </tr>
       </table>
   </td>
@@ -615,8 +876,8 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
-<a id="a9ef3be6b145e76541b50b11849650d2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ef3be6b145e76541b50b11849650d2e">&#9670;&nbsp;</a></span>velocity_right_cmd</h2>
+<a id="a3fcd7967dfe82f390e750e388afbfb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcd7967dfe82f390e750e388afbfb51">&#9670;&nbsp;</a></span>menu_button_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -625,7 +886,315 @@ template&lt;typename MotorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double RobotController::velocity_right_cmd</td>
+          <td class="memname">bool RobotController::menu_button_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58baa1bfdea20b2168e9364bb778927d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58baa1bfdea20b2168e9364bb778927d">&#9670;&nbsp;</a></span>outdoor_mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::outdoor_mode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90988a1f9fb39f193b796a19ca60ef0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90988a1f9fb39f193b796a19ca60ef0e">&#9670;&nbsp;</a></span>ps4_mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::ps4_mode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72b22b7d28ca27f50b5359a2ddf62cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b22b7d28ca27f50b5359a2ddf62cd7">&#9670;&nbsp;</a></span>right_power_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::right_power_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d20f67dc194db618e63623a9578a346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d20f67dc194db618e63623a9578a346">&#9670;&nbsp;</a></span>right_trigger_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::right_trigger_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fb8b1ec0f494aeb72fb51b45fbbe1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb8b1ec0f494aeb72fb51b45fbbe1f9">&#9670;&nbsp;</a></span>right_wheel_motor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TalonFX RobotController::right_wheel_motor_ {2}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ea933ebaa69ab523fcf17d51062ac2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea933ebaa69ab523fcf17d51062ac2c">&#9670;&nbsp;</a></span>robot_disabled_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::robot_disabled_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33ce20c66b47b6052e609cc7d48a1fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ce20c66b47b6052e609cc7d48a1fb0">&#9670;&nbsp;</a></span>share_button_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::share_button_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91f1368572f2ef0c780e250585f94804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f1368572f2ef0c780e250585f94804">&#9670;&nbsp;</a></span>speed_multiplier_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::speed_multiplier_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab460819d7af0649317618b68a9b9b8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab460819d7af0649317618b68a9b9b8ed">&#9670;&nbsp;</a></span>switch_mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::switch_mode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8d44608252c4a53126996ca050014c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d44608252c4a53126996ca050014c5">&#9670;&nbsp;</a></span>trencher_motor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TalonFX RobotController::trencher_motor_ {3}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d2cddee8179562034280aab73d54068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2cddee8179562034280aab73d54068">&#9670;&nbsp;</a></span>trencher_power_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::trencher_power_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3aa86ecfd0fe946391400492c647b010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa86ecfd0fe946391400492c647b010">&#9670;&nbsp;</a></span>turn_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::turn_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32707818b8525b324ce8c77667cdfb0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32707818b8525b324ce8c77667cdfb0d">&#9670;&nbsp;</a></span>velocity_left_cmd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::velocity_left_cmd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bd75733390afdb8eacd1236a9abc11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd75733390afdb8eacd1236a9abc11d">&#9670;&nbsp;</a></span>velocity_right_cmd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RobotController::velocity_right_cmd_</td>
         </tr>
       </table>
   </td>
@@ -659,8 +1228,30 @@ template&lt;typename MotorType &gt; </div>
 
 </div>
 </div>
+<a id="a93b69af9a0f21a89693e97107109c77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b69af9a0f21a89693e97107109c77c">&#9670;&nbsp;</a></span>xbox_mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotController::xbox_mode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/grayson/Lunabotics-2024/lunabot/autonomous/src/<a class="el" href="robot__controller_8cpp.html">robot_controller.cpp</a></li>
+<li>/home/grayson/Lunabotics-2024/lunabot_autonomous/src/<a class="el" href="robot__controller_8cpp.html">robot_controller.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
